@@ -4,6 +4,8 @@ import com.xia.yuapi.service.IdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+
 /**
  * description: Id 生成器
  *
@@ -12,8 +14,16 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class IdGeneration {
-	@Autowired
 	private static IdService idService;
+
+	@Autowired
+	private IdService idServiceInject;
+
+	@PostConstruct
+	public void init() {
+		idService = this.idServiceInject;
+	}
+
 
 	public static long getId() {
 		return idService.getId();

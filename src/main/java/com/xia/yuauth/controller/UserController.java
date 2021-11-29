@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
  * date 2021/11/28 10:02
  */
 @RestController
-@RequestMapping(value = "/v1")
+@RequestMapping(value = "/v1/sys")
 public class UserController {
 
 	@Autowired
