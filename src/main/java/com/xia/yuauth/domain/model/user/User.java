@@ -1,8 +1,9 @@
 package com.xia.yuauth.domain.model.user;
 
-import org.springframework.data.annotation.Id;
-
-import java.time.LocalDateTime;
+import com.xia.yuauth.constants.enums.UserStatusEnum;
+import com.xia.yuauth.domain.model.entity.BaseEntity;
+import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.relational.core.mapping.Table;
 
 
 /**
@@ -11,88 +12,67 @@ import java.time.LocalDateTime;
  * @author Andy Wong
  * date 2021/11/25 9:37
  */
-public class User {
-    @Id
-    private long id;
-    private String username;
-    private String telephone;
-    private String mail;
-    private String password;
-    private String remark;
+@Table(value = "t_sys_user")
+public class User extends BaseEntity {
 
-    private int status;
-    private long operatorId;
-    private LocalDateTime updateTime;
+	private String username;
+	private String telephone;
+	private String mail;
+	private String password;
+	private String remark;
 
-    public long getId() {
-        return id;
-    }
+	private UserStatusEnum status;
 
-    public void setId(long id) {
-        this.id = id;
-    }
+	@PersistenceConstructor
+	public User() {
+	}
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public String getTelephone() {
-        return telephone;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
+	public String getTelephone() {
+		return telephone;
+	}
 
-    public String getMail() {
-        return mail;
-    }
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
 
-    public void setMail(String mail) {
-        this.mail = mail;
-    }
+	public String getMail() {
+		return mail;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public String getRemark() {
-        return remark;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
+	public String getRemark() {
+		return remark;
+	}
 
-    public int getStatus() {
-        return status;
-    }
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
 
-    public void setStatus(int status) {
-        this.status = status;
-    }
+	public UserStatusEnum getStatus() {
+		return status;
+	}
 
-    public long getOperatorId() {
-        return operatorId;
-    }
-
-    public void setOperatorId(long operatorId) {
-        this.operatorId = operatorId;
-    }
-
-    public LocalDateTime getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(LocalDateTime updateTime) {
-        this.updateTime = updateTime;
-    }
+	public void setStatus(UserStatusEnum status) {
+		this.status = status;
+	}
 }

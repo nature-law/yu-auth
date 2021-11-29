@@ -12,23 +12,23 @@ import org.springframework.context.i18n.LocaleContextHolder;
  * @version 1.0
  */
 public class Result<T> {
-    private String code;
+	private String code;
 
-    private T data;
+	private T data;
 
-    private String desc;
+	private String desc;
 
-    public Result<T> code(String code) {
-        this.code = code;
-        MessageSource messageSource = SpringBeanUtil.getBeanByClass(MessageSource.class);
-        String message = messageSource.getMessage(code, null, LocaleContextHolder.getLocale());
-        this.desc = message;
-        return this;
-    }
+	public Result<T> withCode(String code) {
+		this.code = code;
+		MessageSource messageSource = SpringBeanUtil.getBeanByClass(MessageSource.class);
+		String message = messageSource.getMessage(code, null, LocaleContextHolder.getLocale());
+		this.desc = message;
+		return this;
+	}
 
-    public Result<T> data(T data) {
-        this.data = data;
-        return this;
-    }
+	public Result<T> withData(T data) {
+		this.data = data;
+		return this;
+	}
 
 }

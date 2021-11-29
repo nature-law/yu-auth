@@ -170,7 +170,7 @@ public class WebConfig implements WebMvcConfigurer {
 		//拦截规则：除了index，其他都拦截判断
 		// addPathPatterns 用于添加拦截规则
 		// excludePathPatterns 用户排除拦截
-/*		registry.addInterceptor(new IpInterceptor()).addPathPatterns("/**").excludePathPatterns("/index");
-		registry.addInterceptor(new LanguageInterceptor()).addPathPatterns("/**");*/
+		registry.addInterceptor(new IpInterceptor()).addPathPatterns("/**").excludePathPatterns("/index");
+		registry.addInterceptor(new LanguageInterceptor()).addPathPatterns("/**");
 	}
 }

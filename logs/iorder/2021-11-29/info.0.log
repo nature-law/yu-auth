@@ -1,0 +1,393 @@
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.1) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.1) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[INFO ] 2021-11-29 14:11:17 [restartedMain] com.xia.yuauth.YuAuthApplication - Starting YuAuthApplication using Java 1.8.0_241 on ZBTS2003-04194 with PID 61984 (E:\ideaWorkspace\yu-auth\out\production\classes started by Administrator in E:\ideaWorkspace\yu-auth)
+[INFO ] 2021-11-29 14:11:17 [restartedMain] com.xia.yuauth.YuAuthApplication - The following profiles are active: dev
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\gradle-6.3\caches\modules-2\files-2.1\com.mchange\c3p0\0.9.5.4\a21a1d37ae0b59efce99671544f51c34ed1e8def\c3p0-0.9.5.4.jar referenced one or more files that do not exist: file:/D:/gradle-6.3/caches/modules-2/files-2.1/com.mchange/c3p0/0.9.5.4/a21a1d37ae0b59efce99671544f51c34ed1e8def/mchange-commons-java-0.2.15.jar
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 1 JDBC repository interfaces.
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xia.yuauth.domain.model.user.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'yu-auth-consumer' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.dubbo.config.RegistryConfig#0' of type [org.apache.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10010 (http)
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3790 ms
+[INFO ] 2021-11-29 14:11:17 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Starting...
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[INFO ] 2021-11-29 14:11:17 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.d.s.b.c.e.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.1) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.1) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[INFO ] 2021-11-29 14:12:07 [restartedMain] com.xia.yuauth.YuAuthApplication - Starting YuAuthApplication using Java 1.8.0_241 on ZBTS2003-04194 with PID 35648 (E:\ideaWorkspace\yu-auth\out\production\classes started by Administrator in E:\ideaWorkspace\yu-auth)
+[INFO ] 2021-11-29 14:12:07 [restartedMain] com.xia.yuauth.YuAuthApplication - The following profiles are active: dev
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\gradle-6.3\caches\modules-2\files-2.1\com.mchange\c3p0\0.9.5.4\a21a1d37ae0b59efce99671544f51c34ed1e8def\c3p0-0.9.5.4.jar referenced one or more files that do not exist: file:/D:/gradle-6.3/caches/modules-2/files-2.1/com.mchange/c3p0/0.9.5.4/a21a1d37ae0b59efce99671544f51c34ed1e8def/mchange-commons-java-0.2.15.jar
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 JDBC repository interfaces.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xia.yuauth.domain.model.user.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'yu-auth-consumer' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.dubbo.config.RegistryConfig#0' of type [org.apache.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10010 (http)
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2050 ms
+[INFO ] 2021-11-29 14:12:07 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Starting...
+[INFO ] 2021-11-29 14:12:07 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Start completed.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.xia.yuapi.service.IdService com.xia.yuauth.domain.generation.IdGeneration.idService
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.d.c.s.reference.ReferenceCreator - The configBean[type:ReferenceConfig] has been built.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3897e944
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10010 (http) with context path ''
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.apache.curator.utils.Compatibility - Running in ZooKeeper 3.4.x compatibility mode
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.c.f.imps.CuratorFrameworkImpl - Starting
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:host.name=ZBTS2003-04194.kingdee.gbl
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_241
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk1.8.0_241\jre
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;E:\ideaWorkspace\yu-auth\out\production\classes;E:\ideaWorkspace\yu-auth\out\production\resources;E:\mavenRepository\com\xia\yu-api\0.5.4-SNAPSHOT\yu-api-0.5.4-SNAPSHOT.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-jdbc\2.4.5\39b8b626b6ff0e8f888eff980e5df8ab5d83d1f3\spring-boot-starter-data-jdbc-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-redis\2.4.5\5c57c43ee372b05af943ea3908613d643b14b33e\spring-boot-starter-data-redis-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.mybatis.spring.boot\mybatis-spring-boot-starter\2.1.4\1ad97a0fb96ec3630e598e5aaae2dbd2fd29fdb0\mybatis-spring-boot-starter-2.1.4.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-quartz\2.4.5\101ee91d5aa5b51869b76fd2522279d878358556\spring-boot-starter-quartz-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-websocket\2.4.5\bd1c93b7179bad3be53780c10fadb88b22abe348\spring-boot-starter-websocket-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-web\2.4.5\93cf2655557534e35723fbafa069bed2ee125832\spring-boot-starter-web-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-devtools\2.4.5\ab92f47144da105cbf9788f7241a02eb5a8c14d7\spring-boot-devtools-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.apache.dubbo\dubbo-spring-boot-starter\3.0.1\4b59fc8f921b679d12006f5fbd16820589810e69\dubbo-spring-boot-starter-3.0.1.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-jdbc\2.4.5\abcca18ef5a2c877a5574a492b570bb260640de3\spring-boot-starter-jdbc-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.data\spring-data-jdbc\2.1.8\4fae819c123ab2cfa71d90b942ac80277dca84f9\spring-data-jdbc-2.1.8.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\2.4.5\5f5398f459beb958fc2ece1a433420bf03cec628\spring-boot-starter-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.data\spring-data-redis\2.4.8\9e3de72d39c58fb9e9f25e9f9c120f68d99fc65f\spring-data-redis-2.4.8.jar;D:\gradle-6.3\caches\modules-2\files-2.1\io.lettuce\lettuce-core\6.0.4.RELEASE\cfa107b98ef9177f25313c8d9d241a1b32f56e1e\lettuce-core-6.0.4.RELEASE.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.mybatis.spring.boot\mybatis-spring-boot-autoconfigure\2.1.4\190f1630d0f7dee0dfecbacf7216b2b60391c046\mybatis-spring-boot-autoconfigure-2.1.4.jar;E:\mavenRepository\org\mybatis\mybatis\3.5.6\mybatis-3.5.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.mybatis\mybatis-spring\2.0.6\eae03712acdf041a3590b816460945d4bd2691bc\mybatis-spring-2.0.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-context-support\5.3.6\8d1a86779ff49218896c362882bb6ea185db0cb8\spring-context-support-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-tx\5.3.6\c428fe675aca705e6f8b284df8320f8a76e0dd57\spring-tx-5.3.6.jar;E:\mavenRepository\org\quartz-scheduler\quartz\2.3.2\quartz-2.3.2.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-websocket\5.3.6\f19d7eab32dffd64ae92678e9c88d69083397b7d\spring-websocket-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-messaging\5.3.6\456f30b1060e691cc15110780201b680985fe896\spring-messaging-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-json\2.4.5\5c1623aa53adf10cd98884f60db2d9f5958dbc28\spring-boot-starter-json-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-tomcat\2.4.5\f562f975967df544afd88d8d10aa4bcd356b799d\spring-boot-starter-tomcat-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-webmvc\5.3.6\a9bff0c28f90c73b0443de1d9299f32778ac8421\spring-webmvc-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-web\5.3.6\f9290db7324194921c236ad9a940467f55304fa7\spring-web-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\2.4.5\32887531b5a125d4840a08f9610aec766de73606\spring-boot-autoconfigure-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.4.5\d9b82470df2e9549e448d7cef39e578d91f9867f\spring-boot-2.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.apache.dubbo\dubbo-spring-boot-autoconfigure\3.0.1\1f38b04941b99b94bd0f23b1868076ac270c150\dubbo-spring-boot-autoconfigure-3.0.1.jar;E:\mavenRepository\org\apache\curator\curator-x-discovery\4.0.1\curator-x-discovery-4.0.1.jar;E:\mavenRepository\org\apache\zookeeper\zookeeper\3.4.13\zookeeper-3.4.13.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-jdbc\5.3.6\986092dcd187de4d3dbfb5291cef4483f1946d40\spring-jdbc-5.3.6.jar;E:\mavenRepository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.data\spring-data-relational\2.1.8\1a8919442874d61cddf9b59f8f60d1035a2b0bfc\spring-data-relational-2.1.8.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.data\spring-data-commons\2.4.8\6e57826833103244bd9c94266b5dd8886192d222\spring-data-commons-2.4.8.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-context\5.3.6\d99d3931528309a4ff49b7d18f76f1657aa16c52\spring-context-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-beans\5.3.6\99cc944fb3454410b47fc98d4b148a6205bfe8f6\spring-beans-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-core\5.3.6\8f91f60f628075701fde72bb5a43a33feeb27e93\spring-core-5.3.6.jar;E:\mavenRepository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\2.4.5\1537bbc2e8c6c9db806f9fa11ca7af394d7adacc\spring-boot-starter-logging-2.4.5.jar;E:\mavenRepository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;E:\mavenRepository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework.data\spring-data-keyvalue\2.4.8\47a8cee0e251cd27770043e87c5a47540e097adf\spring-data-keyvalue-2.4.8.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-oxm\5.3.6\88eacb7a6704b328fddb47c660715d6c01671c3f\spring-oxm-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-aop\5.3.6\510d9afcfce1fa9a2086906ab87b9989973c251c\spring-aop-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\io.netty\netty-handler\4.1.63.Final\879a43c2325b08e92e8967218b6ddb0ed4b7a0d3\netty-handler-4.1.63.Final.jar;D:\gradle-6.3\caches\modules-2\files-2.1\io.netty\netty-transport\4.1.63.Final\9a8bbe1ba082c9434e6f524d3864a53f340f2df\netty-transport-4.1.63.Final.jar;D:\gradle-6.3\caches\modules-2\files-2.1\io.netty\netty-common\4.1.63.Final\e1206b46384d4dcbecee2901f18ce65ecf02e8a4\netty-common-4.1.63.Final.jar;D:\gradle-6.3\caches\modules-2\files-2.1\io.projectreactor\reactor-core\3.3.16.RELEASE\351a210b34c4108ace4456c1c72d0ff216c7b208\reactor-core-3.3.16.RELEASE.jar;E:\mavenRepository\com\zaxxer\HikariCP-java7\2.4.13\HikariCP-java7-2.4.13.jar;D:\gradle-6.3\caches\modules-2\files-2.1\com.mchange\c3p0\0.9.5.4\a21a1d37ae0b59efce99671544f51c34ed1e8def\c3p0-0.9.5.4.jar;E:\mavenRepository\com\mchange\mchange-commons-java\0.2.15\mchange-commons-java-0.2.15.jar;E:\mavenRepository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.4\jackson-datatype-jdk8-2.11.4.jar;E:\mavenRepository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.4\jackson-datatype-jsr310-2.11.4.jar;E:\mavenRepository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.4\jackson-module-parameter-names-2.11.4.jar;E:\mavenRepository\com\fasterxml\jackson\core\jackson-databind\2.11.4\jackson-databind-2.11.4.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-websocket\9.0.45\5cefd0aab62e2938f51110ebeb557b30ed5abab\tomcat-embed-websocket-9.0.45.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-core\9.0.45\8fb7d78b14e2deb8fec430498c64418ec0a2d983\tomcat-embed-core-9.0.45.jar;E:\mavenRepository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-expression\5.3.6\33ba1d8dfaab0fd60ce4213a206f5d4fc77ce27a\spring-expression-5.3.6.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.apache.dubbo\dubbo-spring-boot-autoconfigure-compatible\3.0.1\1924222f9019ef683eb8b771ec16547f4e45afb6\dubbo-spring-boot-autoconfigure-compatible-3.0.1.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.apache.dubbo\dubbo\3.0.1\d99360db6d18d38c9641ef97916c489474236e0\dubbo-3.0.1.jar;E:\mavenRepository\org\apache\curator\curator-recipes\4.0.1\curator-recipes-4.0.1.jar;E:\mavenRepository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;E:\mavenRepository\log4j\log4j\1.2.17\log4j-1.2.17.jar;E:\mavenRepository\jline\jline\0.9.94\jline-0.9.94.jar;E:\mavenRepository\org\apache\yetus\audience-annotations\0.5.0\audience-annotations-0.5.0.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.springframework\spring-jcl\5.3.6\53ddfc5cfdf438a1d3346fc2912c3e3049a8cb76\spring-jcl-5.3.6.jar;E:\mavenRepository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;E:\mavenRepository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;E:\mavenRepository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;D:\gradle-6.3\caches\modules-2\files-2.1\io.netty\netty-codec\4.1.63.Final\d4d2fccea88c80e56d59ce1053c53df0f9f4f5db\netty-codec-4.1.63.Final.jar;D:\gradle-6.3\caches\modules-2\files-2.1\io.netty\netty-resolver\4.1.63.Final\d07cd47c101dfa655d6d5cc304d523742fd78ca8\netty-resolver-4.1.63.Final.jar;D:\gradle-6.3\caches\modules-2\files-2.1\io.netty\netty-buffer\4.1.63.Final\40028ce5ac7c43f1c9a1439f74637cad04013e23\netty-buffer-4.1.63.Final.jar;E:\mavenRepository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;E:\mavenRepository\com\fasterxml\jackson\core\jackson-core\2.11.4\jackson-core-2.11.4.jar;E:\mavenRepository\com\fasterxml\jackson\core\jackson-annotations\2.11.4\jackson-annotations-2.11.4.jar;E:\mavenRepository\com\alibaba\spring\spring-context-support\1.0.8\spring-context-support-1.0.8.jar;E:\mavenRepository\org\javassist\javassist\3.23.1-GA\javassist-3.23.1-GA.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.eclipse.collections\eclipse-collections\10.4.0\1483b96b273dc1ed02895e1f6b46ddd4380acc04\eclipse-collections-10.4.0.jar;E:\mavenRepository\io\netty\netty-all\4.1.56.Final\netty-all-4.1.56.Final.jar;E:\mavenRepository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;E:\mavenRepository\com\alibaba\fastjson\1.2.70\fastjson-1.2.70.jar;E:\mavenRepository\org\roaringbitmap\RoaringBitmap\0.9.0\RoaringBitmap-0.9.0.jar;E:\mavenRepository\org\apache\curator\curator-framework\4.0.1\curator-framework-4.0.1.jar;E:\mavenRepository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;E:\mavenRepository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;E:\mavenRepository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;D:\gradle-6.3\caches\modules-2\files-2.1\org.eclipse.collections\eclipse-collections-api\10.4.0\b795322bd382540d38b7efa00c29b61b84c1d235\eclipse-collections-api-10.4.0.jar;E:\mavenRepository\org\apache\curator\curator-client\4.0.1\curator-client-4.0.1.jar;E:\mavenRepository\com\google\guava\guava\20.0\guava-20.0.jar;D:\gradle-6.3\caches\modules-2\files-2.1\mysql\mysql-connector-java\8.0.25\f8b9123acd13058c941aff25f308c9ed8000bb73\mysql-connector-java-8.0.25.jar;E:\mavenRepository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;E:\mavenRepository\org\roaringbitmap\shims\0.9.0\shims-0.9.0.jar;D:\ideal\IntelliJ IDEA 2020.2\lib\idea_rt.jar;C:\Users\Administrator\AppData\Local\JetBrains\IntelliJIdea2020.2\groovyHotSwap\gragent.jar;C:\Users\Administrator\AppData\Local\JetBrains\IntelliJIdea2020.2\captureAgent\debugger-agent.jar
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\SmartDepServer;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\Java\jdk1.8.0_241\jre\bin;D:\gradle-6.3\bin;D:\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;D:\Microsoft VS Code\bin;C:\Program Files\nodejs\;D:\xftp\;C:\Program Files\Go\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\ideal\IntelliJ IDEA 2020.2\bin;;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\go\bin;.
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Client environment:user.dir=E:\ideaWorkspace\yu-auth
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=8.142.78.63:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5691b547
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.c.f.imps.CuratorFrameworkImpl - Default schema
+[INFO ] 2021-11-29 14:12:07 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Opening socket connection to server 8.142.78.63/8.142.78.63:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ] 2021-11-29 14:12:07 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Socket connection established to 8.142.78.63/8.142.78.63:2181, initiating session
+[INFO ] 2021-11-29 14:12:07 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Session establishment complete on server 8.142.78.63/8.142.78.63:2181, sessionid = 0x10121e7871800a9, negotiated timeout = 40000
+[INFO ] 2021-11-29 14:12:07 [restartedMain-EventThread] o.a.c.f.state.ConnectionStateManager - State change: CONNECTED
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.c.f.imps.CuratorFrameworkImpl - Starting
+[INFO ] 2021-11-29 14:12:07 [restartedMain] org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=8.142.78.63:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@61a2699d
+[INFO ] 2021-11-29 14:12:07 [restartedMain] o.a.c.f.imps.CuratorFrameworkImpl - Default schema
+[INFO ] 2021-11-29 14:12:07 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Opening socket connection to server 8.142.78.63/8.142.78.63:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ] 2021-11-29 14:12:07 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Socket connection established to 8.142.78.63/8.142.78.63:2181, initiating session
+[INFO ] 2021-11-29 14:12:07 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Session establishment complete on server 8.142.78.63/8.142.78.63:2181, sessionid = 0x10121e7871800aa, negotiated timeout = 40000
+[INFO ] 2021-11-29 14:12:07 [restartedMain-EventThread] o.a.c.f.state.ConnectionStateManager - State change: CONNECTED
+[INFO ] 2021-11-29 14:12:07 [restartedMain] com.xia.yuauth.YuAuthApplication - Started YuAuthApplication in 16.831 seconds (JVM running for 17.767)
+[INFO ] 2021-11-29 14:12:07 [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+[INFO ] 2021-11-29 14:12:07 [Thread-13] org.apache.zookeeper.ZooKeeper - Session: 0x10121e7871800a9 closed
+[INFO ] 2021-11-29 14:12:07 [restartedMain-EventThread] org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x10121e7871800a9
+[INFO ] 2021-11-29 14:12:07 [Thread-13] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 14:12:07 [Thread-13] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+[INFO ] 2021-11-29 14:12:07 [Thread-13] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[INFO ] 2021-11-29 14:12:07 [Thread-13] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 14:12:07 [Thread-13] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[INFO ] 2021-11-29 14:12:07 [Thread-13] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown initiated...
+[INFO ] 2021-11-29 14:12:07 [Thread-13] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown completed.
+[INFO ] 2021-11-29 14:12:07 [Thread-13] o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[INFO ] 2021-11-29 15:33:25 [restartedMain] com.xia.yuauth.YuAuthApplication - Starting YuAuthApplication using Java 1.8.0_241 on ZBTS2003-04194 with PID 35648 (E:\ideaWorkspace\yu-auth\out\production\classes started by Administrator in E:\ideaWorkspace\yu-auth)
+[INFO ] 2021-11-29 15:33:25 [restartedMain] com.xia.yuauth.YuAuthApplication - The following profiles are active: dev
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JDBC repository interfaces.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xia.yuauth.domain.model.user.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'yu-auth-consumer' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.dubbo.config.RegistryConfig#0' of type [org.apache.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10010 (http)
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 497 ms
+[INFO ] 2021-11-29 15:33:25 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Starting...
+[INFO ] 2021-11-29 15:33:25 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Start completed.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.xia.yuapi.service.IdService com.xia.yuauth.domain.generation.IdGeneration.idService
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.d.c.s.reference.ReferenceCreator - The configBean[type:ReferenceConfig] has been built.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3d749079
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10010 (http) with context path ''
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown initiated...
+[INFO ] 2021-11-29 15:33:25 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown completed.
+[INFO ] 2021-11-29 15:33:25 [restartedMain] o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[INFO ] 2021-11-29 15:36:10 [restartedMain] com.xia.yuauth.YuAuthApplication - Starting YuAuthApplication using Java 1.8.0_241 on ZBTS2003-04194 with PID 35648 (E:\ideaWorkspace\yu-auth\out\production\classes started by Administrator in E:\ideaWorkspace\yu-auth)
+[INFO ] 2021-11-29 15:36:10 [restartedMain] com.xia.yuauth.YuAuthApplication - The following profiles are active: dev
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 JDBC repository interfaces.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xia.yuauth.domain.model.user.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'yu-auth-consumer' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.dubbo.config.RegistryConfig#0' of type [org.apache.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10010 (http)
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 732 ms
+[INFO ] 2021-11-29 15:36:10 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Starting...
+[INFO ] 2021-11-29 15:36:10 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Start completed.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.xia.yuapi.service.IdService com.xia.yuauth.domain.generation.IdGeneration.idService
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.d.c.s.reference.ReferenceCreator - The configBean[type:ReferenceConfig] has been built.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3906d0ee
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10010 (http) with context path ''
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown initiated...
+[INFO ] 2021-11-29 15:36:10 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown completed.
+[INFO ] 2021-11-29 15:36:10 [restartedMain] o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[INFO ] 2021-11-29 15:37:29 [restartedMain] com.xia.yuauth.YuAuthApplication - Starting YuAuthApplication using Java 1.8.0_241 on ZBTS2003-04194 with PID 35648 (E:\ideaWorkspace\yu-auth\out\production\classes started by Administrator in E:\ideaWorkspace\yu-auth)
+[INFO ] 2021-11-29 15:37:29 [restartedMain] com.xia.yuauth.YuAuthApplication - The following profiles are active: dev
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JDBC repository interfaces.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xia.yuauth.domain.model.user.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'yu-auth-consumer' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.dubbo.config.RegistryConfig#0' of type [org.apache.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10010 (http)
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 538 ms
+[INFO ] 2021-11-29 15:37:29 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Starting...
+[INFO ] 2021-11-29 15:37:29 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Start completed.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.xia.yuapi.service.IdService com.xia.yuauth.domain.generation.IdGeneration.idService
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.d.c.s.reference.ReferenceCreator - The configBean[type:ReferenceConfig] has been built.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4c2cc5fa
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10010 (http) with context path ''
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown initiated...
+[INFO ] 2021-11-29 15:37:29 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown completed.
+[INFO ] 2021-11-29 15:37:29 [restartedMain] o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[INFO ] 2021-11-29 15:37:34 [restartedMain] com.xia.yuauth.YuAuthApplication - Starting YuAuthApplication using Java 1.8.0_241 on ZBTS2003-04194 with PID 35648 (E:\ideaWorkspace\yu-auth\out\production\classes started by Administrator in E:\ideaWorkspace\yu-auth)
+[INFO ] 2021-11-29 15:37:34 [restartedMain] com.xia.yuauth.YuAuthApplication - The following profiles are active: dev
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JDBC repository interfaces.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xia.yuauth.domain.model.user.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'yu-auth-consumer' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.dubbo.config.RegistryConfig#0' of type [org.apache.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10010 (http)
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 480 ms
+[INFO ] 2021-11-29 15:37:34 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Starting...
+[INFO ] 2021-11-29 15:37:34 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Start completed.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.xia.yuapi.service.IdService com.xia.yuauth.domain.generation.IdGeneration.idService
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.d.c.s.reference.ReferenceCreator - The configBean[type:ReferenceConfig] has been built.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@37db0392
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10010 (http) with context path ''
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown initiated...
+[INFO ] 2021-11-29 15:37:34 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown completed.
+[INFO ] 2021-11-29 15:37:34 [restartedMain] o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[INFO ] 2021-11-29 15:38:55 [restartedMain] com.xia.yuauth.YuAuthApplication - Starting YuAuthApplication using Java 1.8.0_241 on ZBTS2003-04194 with PID 35648 (E:\ideaWorkspace\yu-auth\out\production\classes started by Administrator in E:\ideaWorkspace\yu-auth)
+[INFO ] 2021-11-29 15:38:55 [restartedMain] com.xia.yuauth.YuAuthApplication - The following profiles are active: dev
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JDBC repository interfaces.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xia.yuauth.domain.model.user.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'yu-auth-consumer' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.dubbo.config.RegistryConfig#0' of type [org.apache.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10010 (http)
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 448 ms
+[INFO ] 2021-11-29 15:38:55 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Starting...
+[INFO ] 2021-11-29 15:38:55 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Start completed.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.xia.yuapi.service.IdService com.xia.yuauth.domain.generation.IdGeneration.idService
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.d.c.s.reference.ReferenceCreator - The configBean[type:ReferenceConfig] has been built.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@60a5518d
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10010 (http) with context path ''
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-10010"]
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown initiated...
+[INFO ] 2021-11-29 15:38:55 [restartedMain] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown completed.
+[INFO ] 2021-11-29 15:38:55 [restartedMain] o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!

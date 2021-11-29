@@ -18,18 +18,19 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/v1")
 public class UserController {
 
-    @Autowired
-    private UserService userService;
+	@Autowired
+	private UserService userService;
 
-    @PostMapping(value = "/user")
-    public Result<Boolean> add(@RequestBody User user) {
-        return new Result<Boolean>().code(ResultStatusEnum.SUCCESS.getCode()).data(Boolean.TRUE);
-    }
+	@PostMapping(value = "/user")
+	public Result<User> add(@RequestBody User user) {
+		User saveUser = userService.createUser(user);
+		return new Result<User>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(saveUser);
+	}
 
-    @GetMapping(value = "/user/{id}")
-    public Result<User> getUser(@PathVariable(value = "id") Long id) {
-        User user = new User();
-        user.setId(id);
-        return new Result<User>().code(ResultStatusEnum.SUCCESS.getCode()).data(user);
-    }
+	@GetMapping(value = "/user/{id}")
+	public Result<User> getUser(@PathVariable(value = "id") Long id) {
+		User user = new User();
+		user.setId(id);
+		return new Result<User>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(user);
+	}
 }
