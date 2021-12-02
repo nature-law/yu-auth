@@ -20418,3 +20418,24 @@ org.springframework.beans.factory.support.BeanDefinitionOverrideException: Inval
 [DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
 [DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
 [DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d5 after 19ms
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d4 after 11ms
+[DEBUG] 2021-12-02 23:51:34 [quartzScheduler_QuartzSchedulerThread] o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d5 after 23ms
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d4 after 23ms
+[DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+[DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+[DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d5 after 24ms
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d4 after 13ms
+[DEBUG] 2021-12-02 23:51:34 [quartzScheduler_QuartzSchedulerThread] o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d5 after 17ms
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d4 after 16ms
+[DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+[DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+[DEBUG] 2021-12-02 23:51:34 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d5 after 19ms
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d4 after 13ms
+[DEBUG] 2021-12-02 23:51:34 [quartzScheduler_QuartzSchedulerThread] o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d5 after 28ms
+[DEBUG] 2021-12-02 23:51:34 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x100000b752800d4 after 11ms
