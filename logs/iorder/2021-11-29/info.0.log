@@ -736,3 +736,14 @@
 [INFO ] 2021-11-29 23:26:27 [http-nio-10010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2021-11-29 23:26:27 [http-nio-10010-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2021-11-29 23:26:27 [http-nio-10010-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-11-29 23:26:27 [SpringContextShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+[INFO ] 2021-11-29 23:26:27 [SpringContextShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[INFO ] 2021-11-29 23:26:27 [SpringContextShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] 2021-11-29 23:26:27 [SpringContextShutdownHook] org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[INFO ] 2021-11-29 23:26:27 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown initiated...
+[INFO ] 2021-11-29 23:26:27 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - yu-auth-pool - Shutdown completed.
+[INFO ] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[INFO ] 2021-11-29 23:26:27 [Curator-Framework-0] o.a.c.f.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+[INFO ] 2021-11-29 23:26:27 [DubboShutdownHook] org.apache.zookeeper.ZooKeeper - Session: 0x10121e7871800bd closed
+[INFO ] 2021-11-29 23:26:27 [restartedMain-EventThread] org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x10121e7871800bd

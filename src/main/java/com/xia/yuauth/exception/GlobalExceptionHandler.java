@@ -1,6 +1,7 @@
 package com.xia.yuauth.exception;
 
 import com.alibaba.fastjson.JSON;
+import com.xia.yuauth.constants.enums.ResultStatusEnum;
 import com.xia.yuauth.domain.web.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,8 +34,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     public Result defaultErrorHandler(Exception e) {
         LOGGER.error("未处理的异常{}\n", e.getMessage(), e);
-
-        return new Result();
+        return new Result<>().withCode(ResultStatusEnum.SYSTEM_ERROR.getCode()).withData(null);
     }
 
     @ExceptionHandler(ServletException.class)
@@ -42,16 +42,14 @@ public class GlobalExceptionHandler {
         Map<String, String> getRequestParams = getRequestParams(req);
         LOGGER.error("---ControllerException Handler---Host {} invokes url {} params: {} \nERROR: {}",
                 req.getRemoteHost(), req.getRequestURL(), JSON.toJSONString(getRequestParams), e.getMessage(), e);
-        Result vr = new Result();
-        return vr;
+        return new Result<>().withCode(ResultStatusEnum.SYSTEM_ERROR.getCode()).withData(null);
 
     }
 
     @ExceptionHandler(value = ServiceException.class)
-    public Result defaultServiceExceptionHandler(ServiceException se) {
+    public Result<Object> defaultServiceExceptionHandler(ServiceException se) {
         LOGGER.error("业务层发生异常{}\n", se.getMessage(), se);
-
-        return new Result();
+        return new Result<>().withCode(ResultStatusEnum.SYSTEM_ERROR.getCode()).withData(null);
     }
 
     /**

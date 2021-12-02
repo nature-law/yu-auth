@@ -2,9 +2,7 @@ package com.xia.yuauth.domain.model.user;
 
 import com.xia.yuauth.constants.enums.UserStatusEnum;
 import com.xia.yuauth.domain.model.entity.BaseEntity;
-import com.xia.yuauth.domain.model.role.Role;
 import org.springframework.data.annotation.PersistenceConstructor;
-import org.springframework.data.relational.core.mapping.Embedded;
 import org.springframework.data.relational.core.mapping.Table;
 
 
@@ -24,9 +22,6 @@ public class User extends BaseEntity {
     private String remark;
 
     private UserStatusEnum status;
-
-    @Embedded.Nullable
-    private Role role;
 
     @PersistenceConstructor
     public User() {

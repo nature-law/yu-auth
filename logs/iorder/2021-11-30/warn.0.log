@@ -1,0 +1,81 @@
+[WARN ] 2021-11-30 22:11:36 [restartedMain] o.s.b.c.p.PropertySourcesDeducer - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[WARN ] 2021-11-30 22:11:36 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 27486ms for sessionid 0x10165aab5c3000a
+[WARN ] 2021-11-30 22:11:36 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 27410ms for sessionid 0x10165aab5c30009
+[WARN ] 2021-11-30 22:11:36 [Curator-Framework-0] org.apache.curator.utils.ZKPaths - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+[WARN ] 2021-11-30 22:49:23 [restartedMain] o.s.b.c.p.PropertySourcesDeducer - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[WARN ] 2021-11-30 22:49:23 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Session 0x10165d652930005 for server 8.142.78.63/8.142.78.63:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1145)
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40001. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40005. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40003. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40005. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40010. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40008. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40011. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40012. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40012. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40010. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40014. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40014. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40014. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40014. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40016. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40015. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40017. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40016. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40017. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40018. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40020. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40018. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40020. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40020. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40021. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40021. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40021. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40021. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40018. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40021. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40020. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40023. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40023. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40028. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40028. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40029. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [Curator-ConnectionStateManager-0] o.a.c.f.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40029. Adjusted session timeout ms: 40000
+[WARN ] 2021-11-30 22:49:23 [restartedMain-EventThread] org.apache.curator.ConnectionState - Session expired event received
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (700). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (700). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (2350). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (4750). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (1650). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (15500). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (650). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (1700). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (2550). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (5850). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (7950). Pinning to 500
+[WARN ] 2021-11-30 22:49:23 [DubboShutdownHook] o.a.c.retry.ExponentialBackoffRetry - Sleep extension too large (39800). Pinning to 500

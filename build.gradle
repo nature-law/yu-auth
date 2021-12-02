@@ -1,15 +1,15 @@
 buildscript {
-	repositories {
-		maven {
-			allowInsecureProtocol true
-			url 'http://maven.aliyun.com/nexus/content/groups/public/'
-		}
-	}
+    repositories {
+        maven {
+            allowInsecureProtocol true
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+    }
 }
 plugins {
-	id 'java'
-	id 'idea'
-	id 'maven-publish'
+    id 'java'
+    id 'idea'
+    id 'maven-publish'
 }
 
 group = "${projectGroup}"
@@ -17,80 +17,80 @@ version = "${projectVersion}"
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 tasks.withType(JavaCompile) {
-	options.encoding = "UTF-8"
+    options.encoding = "UTF-8"
 }
 
 repositories {
-	mavenLocal()
-	maven {
-		allowInsecureProtocol true
-		url 'http://8.142.78.63:8081/repository/maven-snapshots/'
-	}
-	maven {
-		url 'https://maven.aliyun.com/nexus/content/groups/public/'
-	}
+    mavenLocal()
+    maven {
+        allowInsecureProtocol true
+        url 'http://8.142.78.63:8081/repository/maven-snapshots/'
+    }
+    maven {
+        url 'https://maven.aliyun.com/nexus/content/groups/public/'
+    }
 }
 
 dependencies {
-	implementation "com.xia:yu-api:$yuApi"
+    implementation "com.xia:yu-api:$yuApi"
 
-	implementation "org.springframework.boot:spring-boot-starter-data-jdbc:$springboot"
-	implementation "org.springframework.boot:spring-boot-starter-data-redis:$springboot"
-	implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatis"
+    implementation "org.springframework.boot:spring-boot-starter-data-jdbc:$springboot"
+    implementation "org.springframework.boot:spring-boot-starter-data-redis:$springboot"
+    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatis"
 
-	implementation "org.springframework.boot:spring-boot-starter-quartz:$springboot"
-	implementation "org.springframework.boot:spring-boot-starter-web:$springboot"
-	implementation "org.springframework.boot:spring-boot-starter-websocket:$springboot"
-	implementation "org.springframework.boot:spring-boot-devtools:$springboot"
-	implementation group: 'org.apache.dubbo', name: 'dubbo-spring-boot-starter', version: "$dubbo"
-	implementation(group: 'org.apache.dubbo', name: 'dubbo-dependencies-zookeeper', version: "$dubbo") {
-		exclude(group: 'org.slf4j', module: 'slf4j-log4j12')
-	}
+    implementation "org.springframework.boot:spring-boot-starter-quartz:$springboot"
+    implementation "org.springframework.boot:spring-boot-starter-web:$springboot"
+    implementation "org.springframework.boot:spring-boot-starter-websocket:$springboot"
+    implementation "org.springframework.boot:spring-boot-devtools:$springboot"
+    implementation group: 'org.apache.dubbo', name: 'dubbo-spring-boot-starter', version: "$dubbo"
+    implementation(group: 'org.apache.dubbo', name: 'dubbo-dependencies-zookeeper', version: "$dubbo") {
+        exclude(group: 'org.slf4j', module: 'slf4j-log4j12')
+    }
 
-	runtimeOnly "mysql:mysql-connector-java:$mysql"
-	testImplementation "org.springframework.boot:mybatis-spring-boot-starter-test:$mybatis"
-	testImplementation "org.springframework.boot:spring-boot-starter-test:$springboot"
+    runtimeOnly "mysql:mysql-connector-java:$mysql"
+    testImplementation "org.springframework.boot:mybatis-spring-boot-starter-test:$mybatis"
+    testImplementation "org.springframework.boot:spring-boot-starter-test:$springboot"
 }
 
 java {
-	withSourcesJar()
-	withJavadocJar()
+    withSourcesJar()
+    withJavadocJar()
 }
 javadoc {
-	options{
-		encoding "UTF-8"
-		charSet 'UTF-8'
-		author true
-		version true
-		links "http://docs.oracle.com/javase/7/docs/api"
-		title "夏禹-权限系统"
-	}
+    options {
+        encoding "UTF-8"
+        charSet 'UTF-8'
+        author true
+        version true
+        links "http://docs.oracle.com/javase/7/docs/api"
+        title "夏禹-权限系统"
+    }
 }
 publishing {
-	publications {
-		// 推送
-		mavenJava(MavenPublication) {
-			from components.java
-		}
-	}
+    publications {
+        // 推送
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 
 
-	// 到 http://8.142.78.63:8081/repository/; 搜索是否上传成功
-	repositories {
-		// 发布Release版本可在版本号后面带上'-RELEASE'，也可不带
-		maven {
-			def releasesUrl = 'http://8.142.78.63:8081/repository/maven-releases/'
-			def snapshotsUrl = 'http://8.142.78.63:8081/repository/maven-snapshots/'
-			url = version.endsWith('SNAPSHOT') ? snapshotsUrl : releasesUrl
-			allowInsecureProtocol true
-			credentials {
-				username = "${nexus_username}"
-				password = "${nexus_password}"
-			}
-		}
-	}
+    // 到 http://8.142.78.63:8081/repository/; 搜索是否上传成功
+    repositories {
+        // 发布Release版本可在版本号后面带上'-RELEASE'，也可不带
+        maven {
+            def releasesUrl = 'http://8.142.78.63:8081/repository/maven-releases/'
+            def snapshotsUrl = 'http://8.142.78.63:8081/repository/maven-snapshots/'
+            url = version.endsWith('SNAPSHOT') ? snapshotsUrl : releasesUrl
+            allowInsecureProtocol true
+            credentials {
+                username = "${nexus_username}"
+                password = "${nexus_password}"
+            }
+        }
+    }
 }
 
 test {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }

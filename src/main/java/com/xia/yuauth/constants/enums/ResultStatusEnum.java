@@ -11,7 +11,9 @@ public enum ResultStatusEnum {
     /**
      * 成功
      */
-    SUCCESS("00000");
+    SUCCESS("00000"),
+
+    SYSTEM_ERROR("B0001");
 
     private String code;
 

@@ -29,8 +29,6 @@ public class UserController {
 
 	@GetMapping(value = "/user/{id}")
 	public Result<User> getUser(@PathVariable(value = "id") Long id) {
-		User user = new User();
-		user.setId(id);
-		return new Result<User>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(user);
+		return new Result<User>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(userService.getUserById(id));
 	}
 }

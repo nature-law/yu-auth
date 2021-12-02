@@ -2,6 +2,7 @@ package com.xia.yuauth.domain.model.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;
+import org.springframework.data.relational.core.mapping.Column;
 
 import java.time.LocalDateTime;
 
@@ -15,11 +16,13 @@ public abstract class BaseEntity {
 	@Id
 	private Long id;
 
+	@Column(value = "update_time")
 	private LocalDateTime updateTime;
+	@Column(value = "create_time")
 	private LocalDateTime createTime;
+	@Column(value = "operator_id")
 	private Long operatorId;
-	@Version
-	private Long version;
+
 
 	public Long getId() {
 		return id;
@@ -53,11 +56,4 @@ public abstract class BaseEntity {
 		this.operatorId = operatorId;
 	}
 
-	public Long getVersion() {
-		return version;
-	}
-
-	public void setVersion(Long version) {
-		this.version = version;
-	}
 }

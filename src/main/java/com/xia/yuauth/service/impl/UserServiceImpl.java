@@ -4,6 +4,8 @@ import com.xia.yuauth.domain.model.user.User;
 import com.xia.yuauth.domain.model.user.UserRepository;
 import com.xia.yuauth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 /**
@@ -23,5 +25,10 @@ public class UserServiceImpl implements UserService {
     public User createUser(User user) {
         User saveUser = userRepository.save(user);
         return saveUser;
+    }
+
+    @Override
+    public User getUserById(Long id) {
+        return userRepository.findById(id).orElse(null);
     }
 }

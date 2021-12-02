@@ -10771,3 +10771,47 @@ java.net.BindException: Address already in use (Bind failed)
 [DEBUG] 2021-11-29 23:26:27 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
 [DEBUG] 2021-11-29 23:26:27 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
 [DEBUG] 2021-11-29 23:26:27 [yu-auth-pool housekeeper] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7dad8bc5, started on Mon Nov 29 23:26:27 CST 2021
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.c.s.DefaultLifecycleProcessor - Bean 'quartzScheduler' completed its stop procedure
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerGracefulShutdown' completed its stop procedure
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483646
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerStartStop' completed its stop procedure
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] org.quartz.simpl.SimpleThreadPool - Shutting down threadpool...
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] org.quartz.simpl.SimpleThreadPool - Shutdown of threadpool complete.
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.d.r.l.RedisMessageListenerContainer - Stopped RedisMessageListenerContainer
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] io.lettuce.core.AbstractRedisClient - Initiate shutdown (100, 100, MILLISECONDS)
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] i.l.c.r.DefaultClientResources - Initiate shutdown (0, 2, SECONDS)
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] i.l.c.r.DefaultEventLoopGroupProvider - Initiate shutdown (0, 2, SECONDS)
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - Before shutdown stats (total=3, active=0, idle=3, waiting=0)
+[DEBUG] 2021-11-29 23:26:27 [yu-auth-pool connection closer] com.zaxxer.hikari.pool.PoolBase - yu-auth-pool - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7d123f13: (connection evicted)
+[DEBUG] 2021-11-29 23:26:27 [yu-auth-pool connection closer] com.zaxxer.hikari.pool.PoolBase - yu-auth-pool - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4604c0d1: (connection evicted)
+[DEBUG] 2021-11-29 23:26:27 [yu-auth-pool connection closer] com.zaxxer.hikari.pool.PoolBase - yu-auth-pool - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4b4541ec: (connection evicted)
+[DEBUG] 2021-11-29 23:26:27 [SpringContextShutdownHook] com.zaxxer.hikari.pool.HikariPool - yu-auth-pool - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[DEBUG] 2021-11-29 23:26:27 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Reading reply sessionid:0x10121e7871800bd, packet:: clientPath:null serverPath:null finished:false header:: 59,2  replyHeader:: 59,2682679,0  request:: '/dubbo/com.xia.yuapi.service.IdService/consumers/dubbo%253A%252F%252F192.168.2.105%252Fcom.xia.yuapi.service.IdService%253Fapplication%253Dyu-auth-consumer%2526category%253Dconsumers%2526check%253Dfalse%2526dubbo%253D2.0.2%2526interface%253Dcom.xia.yuapi.service.IdService%2526metadata-type%253Dremote%2526methods%253DgetId%252CgetIds%2526pid%253D1640%2526qos.enable%253Dfalse%2526release%253D3.0.1%2526revision%253D0.5.4-SNAPSHOT%2526side%253Dconsumer%2526sticky%253Dfalse%2526timestamp%253D1638199589750,-1  response:: null
+[DEBUG] 2021-11-29 23:26:27 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x10121e7871800bd after 29ms
+[DEBUG] 2021-11-29 23:26:27 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Reading reply sessionid:0x10121e7871800be, packet:: clientPath:null serverPath:null finished:false header:: 7,12  replyHeader:: 7,2682679,0  request:: '/services,F  response:: v{'id-provider,'demo-provider},s{2097047,2097047,1631842721571,1631842721571,0,58,0,0,0,2,2643096} 
+[DEBUG] 2021-11-29 23:26:27 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Got ping response for sessionid: 0x10121e7871800be after 11ms
+[DEBUG] 2021-11-29 23:26:27 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Reading reply sessionid:0x10121e7871800be, packet:: clientPath:null serverPath:null finished:false header:: 8,12  replyHeader:: 8,2682679,0  request:: '/services,F  response:: v{'id-provider,'demo-provider},s{2097047,2097047,1631842721571,1631842721571,0,58,0,0,0,2,2643096} 
+[DEBUG] 2021-11-29 23:26:27 [DubboShutdownHook] o.a.c.f.imps.CuratorFrameworkImpl - Closing
+[DEBUG] 2021-11-29 23:26:27 [DubboShutdownHook] o.a.curator.CuratorZookeeperClient - Closing
+[DEBUG] 2021-11-29 23:26:27 [DubboShutdownHook] org.apache.curator.ConnectionState - Closing
+[DEBUG] 2021-11-29 23:26:27 [DubboShutdownHook] org.apache.zookeeper.ZooKeeper - Closing session: 0x10121e7871800bd
+[DEBUG] 2021-11-29 23:26:27 [DubboShutdownHook] org.apache.zookeeper.ClientCnxn - Closing client for session: 0x10121e7871800bd
+[DEBUG] 2021-11-29 23:26:27 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - Reading reply sessionid:0x10121e7871800bd, packet:: clientPath:null serverPath:null finished:false header:: 60,-11  replyHeader:: 60,2682680,0  request:: null response:: null
+[DEBUG] 2021-11-29 23:26:27 [DubboShutdownHook] org.apache.zookeeper.ClientCnxn - Disconnecting client for session: 0x10121e7871800bd
+[DEBUG] 2021-11-29 23:26:27 [restartedMain-SendThread(8.142.78.63:2181)] org.apache.zookeeper.ClientCnxn - An exception was thrown while closing send thread for session 0x10121e7871800bd : Unable to read additional data from server sessionid 0x10121e7871800bd, likely server has closed socket
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-7] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-8] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-2] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-3] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-1] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-9] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-5] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-4] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-6] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [quartzScheduler_Worker-10] org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+[DEBUG] 2021-11-29 23:26:27 [DubboShutdownHook] o.a.d.c.s.c.DubboBootstrapApplicationListener - The source of event[org.apache.dubbo.config.bootstrap.DubboBootstrap@7d810e15] is not original!

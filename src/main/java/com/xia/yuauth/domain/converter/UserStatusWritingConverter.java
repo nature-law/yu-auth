@@ -16,4 +16,5 @@ public class UserStatusWritingConverter implements Converter<UserStatusEnum, Int
 	public Integer convert(UserStatusEnum statusEnum) {
 		return statusEnum.getStatus();
 	}
+
 }
