@@ -15,8 +15,5 @@ spring:
       pool-name: yu-auth-pool
       connection-timeout: 30000
 
-# mybatis 配置
-mybatis:
-  mapper-locations: classpath:/mapper/*.xml
-  type-aliases-package: com.xia.yuauth.domain.model
+
 

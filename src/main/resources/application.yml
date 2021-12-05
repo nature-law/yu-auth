@@ -19,3 +19,8 @@ spring:
     fallbackToSystemLocale: false
   profiles:
     active: dev
+
+# mybatis 配置
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.xia.yuauth.domain.model

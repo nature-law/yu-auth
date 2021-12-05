@@ -37,7 +37,7 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter-data-jdbc:$springboot"
     implementation "org.springframework.boot:spring-boot-starter-data-redis:$springboot"
     implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatis"
-
+    implementation group: 'com.github.pagehelper', name: 'pagehelper', version: "$mybatisHelper"
     implementation "org.springframework.boot:spring-boot-starter-quartz:$springboot"
     implementation "org.springframework.boot:spring-boot-starter-web:$springboot"
     implementation "org.springframework.boot:spring-boot-starter-websocket:$springboot"

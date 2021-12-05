@@ -2,7 +2,7 @@ package com.xia.yuauth.exception;
 
 import com.alibaba.fastjson.JSON;
 import com.xia.yuauth.constants.enums.ResultStatusEnum;
-import com.xia.yuauth.domain.web.Result;
+import com.xia.yuauth.controller.web.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -32,13 +32,13 @@ public class GlobalExceptionHandler {
     private static final String REQ_PARAMS = "request-params";
 
     @ExceptionHandler(value = Exception.class)
-    public Result defaultErrorHandler(Exception e) {
+    public Result<Object> defaultErrorHandler(Exception e) {
         LOGGER.error("未处理的异常{}\n", e.getMessage(), e);
         return new Result<>().withCode(ResultStatusEnum.SYSTEM_ERROR.getCode()).withData(null);
     }
 
     @ExceptionHandler(ServletException.class)
-    public Result controllerExceptionHandler(HttpServletRequest req, Exception e) {
+    public Result<Object> controllerExceptionHandler(HttpServletRequest req, Exception e) {
         Map<String, String> getRequestParams = getRequestParams(req);
         LOGGER.error("---ControllerException Handler---Host {} invokes url {} params: {} \nERROR: {}",
                 req.getRemoteHost(), req.getRequestURL(), JSON.toJSONString(getRequestParams), e.getMessage(), e);

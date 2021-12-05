@@ -1,12 +1,17 @@
 package com.xia.yuauth.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.xia.yuauth.domain.model.user.User;
 import com.xia.yuauth.domain.model.user.UserRepository;
+import com.xia.yuauth.mapper.UserMapper;
 import com.xia.yuauth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * description:
@@ -21,6 +26,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private UserMapper userMapper;
+
     @Override
     public User createUser(User user) {
         User saveUser = userRepository.save(user);
@@ -30,5 +38,17 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUserById(Long id) {
         return userRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public PageInfo<User> list(Pageable pageable) {
+        PageHelper.startPage(pageable.getPageNumber(), pageable.getPageSize());
+        List<User> list = userMapper.list();
+        return new PageInfo<>(list);
+    }
+
+    @Override
+    public Page<User> listAll(Pageable pageable) {
+        return userRepository.findAll(pageable);
     }
 }
