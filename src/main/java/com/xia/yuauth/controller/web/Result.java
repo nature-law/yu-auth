@@ -31,6 +31,11 @@ public class Result<T> {
         return this;
     }
 
+    public Result<T> withDesc(String desc) {
+        this.desc = desc;
+        return this;
+    }
+
     public String getCode() {
         return code;
     }

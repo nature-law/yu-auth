@@ -47,6 +47,13 @@ dependencies {
 	implementation "com.auth0:java-jwt:$auth0"
 	implementation "io.jsonwebtoken:jjwt:$jjwt"
 	implementation "cn.hutool:hutool-all:$hutoolAll"
+	implementation 'org.apache.commons:commons-lang3:3.12.0'
+	implementation 'commons-io:commons-io:2.11.0'
+	implementation 'commons-collections:commons-collections:3.2.2'
+	implementation 'commons-beanutils:commons-beanutils:1.9.4'
+	implementation 'commons-codec:commons-codec:1.15'
+	implementation 'commons-logging:commons-logging:1.2'
+
 
 	implementation(group: 'org.apache.dubbo', name: 'dubbo-dependencies-zookeeper', version: "$dubbo") {
 		exclude(group: 'org.slf4j', module: 'slf4j-log4j12')

@@ -49,6 +49,9 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = ServiceException.class)
     public Result<Object> defaultServiceExceptionHandler(ServiceException se) {
         LOGGER.error("业务层发生异常{}\n", se.getMessage(), se);
+        if(se.getResult() != null){
+            return se.getResult();
+        }
         return new Result<>().withCode(ResultStatusEnum.SYSTEM_ERROR.getCode()).withData(null);
     }
 

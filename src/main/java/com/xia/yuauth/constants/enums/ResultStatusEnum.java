@@ -13,7 +13,9 @@ public enum ResultStatusEnum {
      */
     SUCCESS("00000"),
 
-    SYSTEM_ERROR("B0001");
+    SYSTEM_ERROR("B0001"),
+
+    PARAMS_NOT_MATCHES("A0421");
 
     private String code;
 
