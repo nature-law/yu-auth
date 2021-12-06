@@ -13,25 +13,19 @@ import org.springframework.data.convert.ReadingConverter;
  * @version 1.0
  */
 @ReadingConverter
-public class ReadingConverterFactory implements ConverterFactory<Object, EnumConvertible> {
-    @Override
-    public <T extends EnumConvertible> Converter<Object, T> getConverter(Class<T> targetType) {
-        return source -> {
-            T[] enumConstants = targetType.getEnumConstants();
-            for (T enumConstant : enumConstants) {
-                // 整数型值转换为枚举
-                Object enumValue = enumConstant.getValue();
-                if (enumValue instanceof Integer) {
-                    if (enumValue == source) {
-                        return enumConstant;
-                    }
-                } else if (enumValue instanceof String) {
-                    if (enumValue.equals(source)) {
-                        return enumConstant;
-                    }
-                }
-            }
-            return null;
-        };
-    }
+public class ReadingConverterFactory implements ConverterFactory<Integer, EnumConvertible> {
+	@Override
+	public <T extends EnumConvertible> Converter<Integer, T> getConverter(Class<T> targetType) {
+		return source -> {
+			T[] enumConstants = targetType.getEnumConstants();
+			for (T enumConstant : enumConstants) {
+				// 整数型值转换为枚举
+				Integer enumValue = enumConstant.getValue();
+				if (enumValue.equals(source)) {
+					return enumConstant;
+				}
+			}
+			return null;
+		};
+	}
 }

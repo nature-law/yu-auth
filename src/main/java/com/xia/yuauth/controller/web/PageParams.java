@@ -1,5 +1,9 @@
 package com.xia.yuauth.controller.web;
 
+import com.xia.yuauth.constants.enums.Direction;
+
+import java.util.List;
+
 /**
  * description: 分页参数
  *
@@ -8,50 +12,136 @@ package com.xia.yuauth.controller.web;
  * @version 1.0
  */
 public class PageParams {
-    private Integer pageNum;
-    private Integer pageSize;
-    private Boolean isPaging;
-    private Sort sort;
+	private Integer pageNum;
+	private Integer pageSize;
 
-    public PageParams() {
-    }
+	private Sort sort;
 
-    class Sort {
+	public PageParams() {
+	}
 
-        class Order {
+	/**
+	 * Sort option for queries. You have to provide at least a list of properties to sort for that must not include
+	 * {@literal null} or empty strings. The direction defaults to {@link org.springframework.data.domain.Sort#DEFAULT_DIRECTION}.
+	 *
+	 * @author Oliver Gierke
+	 * @author Thomas Darimont
+	 * @author Mark Paluch
+	 */
+	public static class Sort {
+		public Sort() {
+		}
 
-        }
-    }
+		private List<Sort.Order> orders;
 
-    public Integer getPageNum() {
-        return pageNum;
-    }
+		public List<Order> getOrders() {
+			return orders;
+		}
 
-    public void setPageNum(Integer pageNum) {
-        this.pageNum = pageNum;
-    }
+		public void setOrders(List<Order> orders) {
+			this.orders = orders;
+		}
 
-    public Integer getPageSize() {
-        return pageSize;
-    }
+		/**
+		 * Enumeration for null handling hints that can be used in {@link org.springframework.data.domain.Sort.Order} expressions.
+		 *
+		 * @author Thomas Darimont
+		 * @since 1.8
+		 */
+		public static enum NullHandling {
 
-    public void setPageSize(Integer pageSize) {
-        this.pageSize = pageSize;
-    }
+			/**
+			 * Lets the data store decide what to do with nulls.
+			 */
+			NATIVE,
 
-    public Boolean getPaging() {
-        return isPaging;
-    }
+			/**
+			 * A hint to the used data store to order entries with null values before non null entries.
+			 */
+			NULLS_FIRST,
 
-    public void setPaging(Boolean paging) {
-        isPaging = paging;
-    }
+			/**
+			 * A hint to the used data store to order entries with null values after non null entries.
+			 */
+			NULLS_LAST;
+		}
 
-    public Sort getSort() {
-        return sort;
-    }
+		/**
+		 * PropertyPath implements the pairing of an {@link org.springframework.data.domain.Sort.Direction} and a property. It is used to provide input for
+		 * {@link org.springframework.data.domain.Sort}
+		 *
+		 * @author Oliver Gierke
+		 * @author Kevin Raymond
+		 */
+		public static class Order {
+			private Direction direction;
+			private String property;
+			private boolean ignoreCase;
+			private NullHandling nullHandling;
 
-    public void setSort(Sort sort) {
-        this.sort = sort;
-    }
+			public Order() {
+			}
+
+			public Direction getDirection() {
+				return direction;
+			}
+
+			public void setDirection(Direction direction) {
+				this.direction = direction;
+			}
+
+			public String getProperty() {
+				return property;
+			}
+
+			public void setProperty(String property) {
+				this.property = property;
+			}
+
+			public boolean isIgnoreCase() {
+				return ignoreCase;
+			}
+
+			public void setIgnoreCase(boolean ignoreCase) {
+				this.ignoreCase = ignoreCase;
+			}
+
+			public NullHandling getNullHandling() {
+				return nullHandling;
+			}
+
+			public void setNullHandling(NullHandling nullHandling) {
+				this.nullHandling = nullHandling;
+			}
+		}
+	}
+
+
+	public Integer getPageNum() {
+		return pageNum;
+	}
+
+	public void setPageNum(Integer pageNum) {
+		this.pageNum = pageNum;
+	}
+
+	public Integer getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(Integer pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public Sort getSort() {
+		return sort;
+	}
+
+	public void setSort(Sort sort) {
+		this.sort = sort;
+	}
+
+	public static String getSortString() {
+
+	}
 }

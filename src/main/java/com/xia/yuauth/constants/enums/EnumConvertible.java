@@ -13,5 +13,5 @@ public interface EnumConvertible {
      *
      * @return 枚举的键值
      */
-    Object getValue();
+    Integer getValue();
 }

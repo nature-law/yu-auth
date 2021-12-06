@@ -45,7 +45,7 @@ public enum UserStatusEnum implements EnumConvertible {
     }
 
     @Override
-    public Object getValue() {
+    public Integer getValue() {
         return getStatus();
     }
 }
