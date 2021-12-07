@@ -6,6 +6,7 @@ import com.xia.yuauth.constants.enums.ResultStatusEnum;
 import com.xia.yuauth.constants.enums.converter.PageParamsPageableConverter;
 import com.xia.yuauth.controller.web.PageParams;
 import com.xia.yuauth.controller.web.Result;
+import com.xia.yuauth.controller.web.annotation.ResultConvert;
 import com.xia.yuauth.controller.web.annotation.VerifyPageParams;
 import com.xia.yuauth.domain.model.user.User;
 import com.xia.yuauth.service.UserService;
@@ -23,31 +24,34 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping(value = "/v1/sys")
+@ResultConvert
 public class UserController {
 
-    @Autowired
-    private UserService userService;
+	@Autowired
+	private UserService userService;
 
-    @PostMapping(value = "/user")
-    public Result<User> add(@RequestBody User user) {
-        User saveUser = userService.createUser(user);
-        return new Result<User>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(saveUser);
-    }
+	@PostMapping(value = "/user")
+	public Result<User> add(@RequestBody User user) {
+		User saveUser = userService.createUser(user);
+		return new Result<User>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(saveUser);
+	}
 
-    @GetMapping(value = "/user/{id}")
-    public Result<User> getUser(@PathVariable(value = "id") Long id) {
-        return new Result<User>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(userService.getUserById(id));
-    }
 
-    @GetMapping(value = "/users")
-    public Result<PageInfo<User>> list(Pageable pageable) {
-        return new Result<PageInfo<User>>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(userService.list(pageable));
-    }
+	@GetMapping(value = "/user/{id}")
+	public User getUser(@PathVariable(value = "id") Long id) {
+		return userService.getUserById(id);
+	}
 
-    @VerifyPageParams
-    @GetMapping(value = "/users/paging")
-    public Result<Page<User>> listAll(@RequestBody PageParams pageParams) {
-        Pageable pageable = new PageParamsPageableConverter().convert(pageParams);
-        return new Result<Page<User>>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(userService.listAll(pageable));
-    }
+	@GetMapping(value = "/users")
+	public Result<PageInfo<User>> list(Pageable pageable) {
+		return new Result<PageInfo<User>>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(userService.list(pageable));
+	}
+
+	@VerifyPageParams
+	@ResultConvert
+	@GetMapping(value = "/users/paging")
+	public Result<Page<User>> listAll(@RequestBody PageParams pageParams) {
+		Pageable pageable = new PageParamsPageableConverter().convert(pageParams);
+		return new Result<Page<User>>().withCode(ResultStatusEnum.SUCCESS.getCode()).withData(userService.listAll(pageable));
+	}
 }
