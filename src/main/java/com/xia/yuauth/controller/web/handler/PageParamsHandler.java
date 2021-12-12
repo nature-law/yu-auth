@@ -1,10 +1,10 @@
 package com.xia.yuauth.controller.web.handler;
 
-import com.xia.yuauth.constants.enums.ResultStatusEnum;
-import com.xia.yuauth.controller.web.PageParams;
-import com.xia.yuauth.controller.web.Result;
+import com.xia.yuauth.common.enums.ResultStatusEnum;
+import com.xia.yuauth.controller.web.vo.PageParams;
+import com.xia.yuauth.controller.web.vo.Result;
 import com.xia.yuauth.controller.web.annotation.VerifyPageParams;
-import com.xia.yuauth.exception.ServiceException;
+import com.xia.yuauth.common.exception.ServiceException;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpInputMessage;

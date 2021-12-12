@@ -47,8 +47,14 @@ public class UserServiceImpl implements UserService {
         return new PageInfo<>(list);
     }
 
+
     @Override
     public Page<User> listAll(Pageable pageable) {
         return userRepository.findAll(pageable);
+    }
+
+    @Override
+    public Integer isExists(String account, String property) {
+        return userRepository.isExists(account);
     }
 }

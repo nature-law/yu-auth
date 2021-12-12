@@ -26,4 +26,6 @@ public interface UserService {
 
     Page<User> listAll(Pageable pageable);
 
+    Integer isExists(String account, String property);
+
 }

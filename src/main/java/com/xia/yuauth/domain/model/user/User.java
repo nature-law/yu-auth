@@ -1,6 +1,6 @@
 package com.xia.yuauth.domain.model.user;
 
-import com.xia.yuauth.constants.enums.UserStatusEnum;
+import com.xia.yuauth.common.enums.UserStatusEnum;
 import com.xia.yuauth.domain.model.entity.BaseEntity;
 import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.relational.core.mapping.Table;

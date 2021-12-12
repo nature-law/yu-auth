@@ -9,7 +9,7 @@
         <id column="create_time" property="createTime"/>
         <id column="update_time" property="updateTime"/>
         <id column="operator_id" property="operatorId"/>
-        <id column="status" property="status" typeHandler="com.xia.yuauth.constants.enums.handler.UserStatusHandler"/>
+        <id column="status" property="status" typeHandler="com.xia.yuauth.common.enums.handler.UserStatusHandler"/>
     </resultMap>
     <!--查询列表-->
     <select id="list" resultMap="userMap">
