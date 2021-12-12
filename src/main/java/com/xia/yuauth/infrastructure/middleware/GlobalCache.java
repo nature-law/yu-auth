@@ -13,7 +13,7 @@ import java.util.Set;
  * date     2021/12/9 23:06
  * @version 1.0
  */
-public interface IGlobalCache {
+public interface GlobalCache {
 
     /**
      * 指定缓存失效时间

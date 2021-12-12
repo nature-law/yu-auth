@@ -47,12 +47,12 @@ public class RedisConfiguration {
         jpcb.poolConfig(jedisPoolConfig);
         JedisClientConfiguration clientConfiguration = jpcb.build();
 
-        return new JedisConnectionFactory(config, clientConfiguration);
+        return new JedisConnectionFactory(config);
     }
 
     @Primary
     @Bean(name = "jedisPoolConfig")
-    @ConfigurationProperties(prefix = "spring.redis.pool")
+    @ConfigurationProperties(prefix = "spring.redis.jedis.pool")
     public JedisPoolConfig jedisPoolConfig() {
         JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
         jedisPoolConfig.setMaxWaitMillis(10000);
@@ -81,7 +81,7 @@ public class RedisConfiguration {
     }
 
     @Bean
-    IGlobalCache cache(RedisTemplate<String, Object> redisTemplate) {
+    GlobalCache cache(RedisTemplate<String, Object> redisTemplate) {
         return new AppRedisCacheManager(redisTemplate);
     }
 

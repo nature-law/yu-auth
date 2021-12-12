@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
  * date     2021/12/9 23:07
  * @version 1.0
  */
-public class AppRedisCacheManager implements IGlobalCache {
+public class AppRedisCacheManager implements GlobalCache {
 
     private RedisTemplate<String, Object> redisTemplate;
 

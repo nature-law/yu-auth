@@ -20,7 +20,7 @@ import java.util.List;
 @SpringBootTest
 public class RedisConfigurationTest {
     @Autowired
-    private IGlobalCache globalCache;
+    private GlobalCache globalCache;
 
     @Test
     public void test() {

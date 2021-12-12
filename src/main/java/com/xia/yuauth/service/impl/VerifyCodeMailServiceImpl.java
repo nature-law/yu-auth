@@ -1,13 +1,13 @@
 package com.xia.yuauth.service.impl;
 
 import com.xia.yuauth.common.exception.ServiceException;
+import com.xia.yuauth.infrastructure.middleware.GlobalCache;
 import com.xia.yuauth.infrastructure.utils.VerifyCodeUtils;
 import com.xia.yuauth.service.VerifyCodeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
@@ -31,6 +31,14 @@ public class VerifyCodeMailServiceImpl implements VerifyCodeService {
     @Value("${spring.mail.username}")
     private String mailUsername;
 
+    @Autowired
+    private GlobalCache globalCache;
+
+    /**
+     * 验证码过期时间
+     */
+    private static final long EXPIRE_TIME = 5 * 60 * 1000;
+
     @Override
     public String sendMessage(String account) {
         String code = String.valueOf(VerifyCodeUtils.getRandomChars());
@@ -48,6 +56,8 @@ public class VerifyCodeMailServiceImpl implements VerifyCodeService {
             messageHelper.setText(content, true);
             //发送
             sender.send(message);
+
+            globalCache.set(account, code, EXPIRE_TIME);
         } catch (Exception e) {
             throw new ServiceException(e, "发送邮件失败");
         }
