@@ -13,9 +13,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ShiroConfig {
 
- /*   @Bean
+    @Bean
     public Realm realm() {
         Realm realm = new Realm();
         return realm;
-    }*/
+    }
 }
