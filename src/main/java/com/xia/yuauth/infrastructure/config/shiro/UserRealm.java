@@ -65,7 +65,7 @@ public class UserRealm extends AuthorizingRealm {
             SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(user, user.getPassword(), getName());
             return info;
         } else {
-            //todo 如果是BearerToken 则 另做处理
+            //todo 如果是 BearerToken 则 另做处理
             return null;
         }
     }

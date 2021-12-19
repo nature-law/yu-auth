@@ -27,7 +27,7 @@ public class ShiroConfig {
     public UserRealm getRealm() {
         UserRealm userRealm = new UserRealm();
 
-        // 设置Hash凭证校验匹配器，用来完成密码加密校验
+      /*  // 设置Hash凭证校验匹配器，用来完成密码加密校验
         HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
         // 设置加密算法MD5
         hashedCredentialsMatcher.setHashAlgorithmName("md5");
@@ -35,7 +35,7 @@ public class ShiroConfig {
         hashedCredentialsMatcher.setHashIterations(1024);
 
         // 注入凭证校验匹配器
-        userRealm.setCredentialsMatcher(hashedCredentialsMatcher);
+        userRealm.setCredentialsMatcher(hashedCredentialsMatcher);*/
 
         return userRealm;
     }
