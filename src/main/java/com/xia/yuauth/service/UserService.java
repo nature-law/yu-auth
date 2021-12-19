@@ -20,7 +20,21 @@ public interface UserService {
      */
     User createUser(User user);
 
+    /**
+     * description: 通过id 获取用户信息
+     *
+     * @param id 用户id
+     * @return : 用户
+     */
     User getUserById(Long id);
+
+    /**
+     * description: 通过注册邮箱获取用户信息
+     *
+     * @param mail 注册邮箱
+     * @return : 用户信息
+     */
+    User getUserByMail(String mail);
 
     PageInfo<User> list(Pageable pageable);
 

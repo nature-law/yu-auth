@@ -22,7 +22,6 @@ import java.util.Arrays;
  */
 @Configuration
 @EnableJdbcAuditing
-
 public class DataJdbcConfiguration extends AbstractJdbcConfiguration {
 
 

@@ -11,6 +11,10 @@ import com.xia.yuauth.controller.web.vo.Result;
 import com.xia.yuauth.domain.model.user.User;
 import com.xia.yuauth.infrastructure.middleware.GlobalCache;
 import com.xia.yuauth.service.UserService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -60,9 +64,12 @@ public class UserController {
     }
 
     @PostMapping("/user/login")
-    public boolean login(String account, @NonNull String verifyCode) {
+    public boolean login(String account, String password, boolean rememberMe, @NonNull String verifyCode) {
         String code = (String) globalCache.get(account);
         if (verifyCode.equals(code)) {
+            Subject subject = SecurityUtils.getSubject();
+            AuthenticationToken token = new UsernamePasswordToken(account, password, rememberMe);
+            subject.login(token);
             return true;
         } else {
             throw new ServiceException(new Result<>().withCode("A0240"));
