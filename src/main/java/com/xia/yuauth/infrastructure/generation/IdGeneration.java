@@ -1,4 +1,4 @@
-package com.xia.yuauth.domain.generation;
+package com.xia.yuauth.infrastructure.generation;
 
 import com.xia.yuapi.service.IdService;
 import org.springframework.beans.factory.annotation.Autowired;

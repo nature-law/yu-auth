@@ -62,17 +62,4 @@ public class UserController {
         Pageable pageable = new PageParamsPageableConverter().convert(pageParams);
         return userService.listAll(pageable);
     }
-
-    @PostMapping("/user/login")
-    public boolean login(String account, String password, boolean rememberMe, @NonNull String verifyCode) {
-        String code = (String) globalCache.get(account);
-        if (verifyCode.equals(code)) {
-            Subject subject = SecurityUtils.getSubject();
-            AuthenticationToken token = new UsernamePasswordToken(account, password, rememberMe);
-            subject.login(token);
-            return true;
-        } else {
-            throw new ServiceException(new Result<>().withCode("A0240"));
-        }
-    }
 }

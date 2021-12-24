@@ -2,7 +2,7 @@ package com.xia.yuauth.infrastructure.config;
 
 import com.xia.yuauth.common.enums.converter.ReadingConverterFactory;
 import com.xia.yuauth.common.enums.converter.WritingConverterFactory;
-import com.xia.yuauth.domain.generation.IdGeneration;
+import com.xia.yuauth.infrastructure.generation.IdGeneration;
 import com.xia.yuauth.domain.model.entity.BaseEntity;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

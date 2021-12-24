@@ -1,12 +1,15 @@
 package com.xia.yuauth.infrastructure.config.shiro;
 
-import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
+import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
+import org.apache.shiro.mgt.DefaultSubjectDAO;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.servlet.Filter;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -31,8 +34,8 @@ public class ShiroConfig {
         HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
         // 设置加密算法MD5
         hashedCredentialsMatcher.setHashAlgorithmName("md5");
-        // 设置散列次数1024
-        hashedCredentialsMatcher.setHashIterations(1024);
+        // 设置散列次数 2
+        hashedCredentialsMatcher.setHashIterations(2);
 
         // 注入凭证校验匹配器
         userRealm.setCredentialsMatcher(hashedCredentialsMatcher);*/
@@ -51,6 +54,15 @@ public class ShiroConfig {
 
         // 给SecurityManager注入Realm
         defaultWebSecurityManager.setRealm(getRealm());
+
+        // 关闭session
+        DefaultSubjectDAO subjectDAO = new DefaultSubjectDAO();
+        DefaultSessionStorageEvaluator defaultSessionStorageEvaluator = new DefaultSessionStorageEvaluator();
+        defaultSessionStorageEvaluator.setSessionStorageEnabled(false);
+        subjectDAO.setSessionStorageEvaluator(defaultSessionStorageEvaluator);
+        defaultWebSecurityManager.setSubjectDAO(subjectDAO);
+
+
         return defaultWebSecurityManager;
     }
 
@@ -68,9 +80,9 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setSecurityManager(getDefaultWebSecurityManager());
 
         // 设置默认认证路径，认证失败后会调用该接口，也算是公共资源
-        shiroFilterFactoryBean.setLoginUrl("/v1/sys/user/login");
+        shiroFilterFactoryBean.setLoginUrl("/v1/login");
         // 配置公共资源和受限资源
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new LinkedHashMap<>();
         // anon是过滤器的一种，表示该资源是公共资源，需要设置在authc上面
         map.put("/index", "anon");
         map.put("/v1/sys/user/register", "anon");
@@ -79,9 +91,22 @@ public class ShiroConfig {
         // authc是过滤器的一种，表示除了设置公共资源和默认认证路径之外所有资源是受限资源
         map.put("/**", "authc");
 
+
+        // 添加自己的过滤器并且取名为jwt
+        LinkedHashMap<String, Filter> filterMap = new LinkedHashMap<>();
+        filterMap.put("jwt", jwtFilter());
+        shiroFilterFactoryBean.setFilters(filterMap);
+        // 过滤链定义，从上向下顺序执行，一般将放在最为下边
+        map.put("/**", "jwt");
+
         shiroFilterFactoryBean.setFilterChainDefinitionMap(map);
 
         return shiroFilterFactoryBean;
+    }
+
+    @Bean
+    public JwtFilter jwtFilter() {
+        return new JwtFilter();
     }
 
 }
