@@ -1,5 +1,6 @@
 package com.xia.yuauth.controller;
 
+import com.auth0.jwt.interfaces.DecodedJWT;
 import com.xia.yuauth.common.exception.ServiceException;
 import com.xia.yuauth.controller.web.vo.Result;
 import com.xia.yuauth.domain.model.user.User;
@@ -33,48 +34,54 @@ import java.util.Map;
 @RequestMapping("/v1")
 public class LoginController {
 
-    @Autowired
-    private TokenService tokenService;
+	@Autowired
+	private TokenService tokenService;
 
-    @Autowired
-    private GlobalCache globalCache;
+	@Autowired
+	private GlobalCache globalCache;
 
-    @Autowired
-    private UserService userService;
+	@Autowired
+	private UserService userService;
 
-    @PostMapping("/login")
-    public Map<String, String> login(String account, String password, boolean rememberMe, @NonNull String verifyCode) {
-        String code = (String) globalCache.get(account);
-        Map<String, String> result = new HashMap<>(2);
-        if (verifyCode.equals(code)) {
-            Subject subject = SecurityUtils.getSubject();
-            AuthenticationToken token = new UsernamePasswordToken(account, password, rememberMe);
-            subject.login(token);
-            User user = getUser(account);
-            String refreshToken = tokenService.newRefreshToken();
-            String accessToken = JWTUtils.getToken(user);
-            result.put("refresh_token", refreshToken);
-            result.put("access_token", accessToken);
-        } else {
-            throw new ServiceException(new Result<>().withCode("A0240"));
-        }
-        return result;
-    }
+	@PostMapping("/login")
+	public Map<String, String> login(String account, String password, boolean rememberMe, @NonNull String verifyCode) {
+		String code = (String) globalCache.get(account);
+		Map<String, String> result = new HashMap<>(2);
+		if (verifyCode.equals(code)) {
+			Subject subject = SecurityUtils.getSubject();
+			AuthenticationToken token = new UsernamePasswordToken(account, password, rememberMe);
+			subject.login(token);
+			User user = getUser(account);
+			String refreshToken = tokenService.newRefreshToken(user);
+			String accessToken = JWTUtils.getToken(user);
+			result.put("refresh_token", refreshToken);
+			result.put("access_token", accessToken);
+		} else {
+			throw new ServiceException(new Result<>().withCode("A0240"));
+		}
+		return result;
+	}
 
-    private User getUser(String username) {
-        User user = new User();
-        User userByMail = userService.getUserByMail(username);
-        return userByMail;
-    }
+	private User getUser(String username) {
+		User userByMail = userService.getUserByMail(username);
+		return userByMail;
+	}
 
-    @GetMapping("/access_token")
-    public String refreshAccessToken(String refreshToken, String username) {
-        int val = (int) globalCache.get(RefreshTokenServiceImpl.REFRESH_TOKEN_PREFIX + refreshToken);
-        if (val == RefreshTokenServiceImpl.EXIST) {
-            User user = getUser(username);
-            return JWTUtils.getToken(user);
-        } else {
-            throw new ServiceException(new Result<>().withCode("A0230").withDesc("请重新登录。"));
-        }
-    }
+	@GetMapping("/access_token")
+	public String refreshAccessToken(String refreshToken) {
+		int val = (int) globalCache.get(RefreshTokenServiceImpl.REFRESH_TOKEN_PREFIX + refreshToken);
+		if (val == RefreshTokenServiceImpl.EXIST) {
+			boolean isAllow = JWTUtils.validateToken(refreshToken);
+			if (isAllow) {
+				DecodedJWT decodedJWT = JWTUtils.decodeToken(refreshToken);
+				String username = decodedJWT.getClaim(JWTUtils.USER_ID).asString();
+				User user = getUser(username);
+				return JWTUtils.getToken(user);
+			} else {
+				throw new ServiceException(new Result<>().withCode("A0310"));
+			}
+		} else {
+			throw new ServiceException(new Result<>().withCode("A0230"));
+		}
+	}
 }

@@ -1,5 +1,8 @@
 package com.xia.yuauth.service;
 
+import com.xia.yuauth.domain.model.user.User;
+import org.springframework.lang.NonNull;
+
 /**
  * description Token服务
  *
@@ -8,5 +11,5 @@ package com.xia.yuauth.service;
  * @version 1.0
  */
 public interface TokenService {
-    String newRefreshToken();
+    String newRefreshToken(@NonNull User user);
 }
