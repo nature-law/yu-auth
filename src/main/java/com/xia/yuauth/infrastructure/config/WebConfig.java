@@ -8,6 +8,8 @@ import com.xia.yuauth.controller.web.interceptor.IpInterceptor;
 import com.xia.yuauth.controller.web.interceptor.LanguageInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.data.repository.query.Param;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -177,22 +179,9 @@ public class WebConfig implements WebMvcConfigurer {
         // excludePathPatterns 用户排除拦截
         registry.addInterceptor(new IpInterceptor()).addPathPatterns("/**").excludePathPatterns("/index");
         registry.addInterceptor(new LanguageInterceptor()).addPathPatterns("/**");
-        registry.addInterceptor(localeChangeInterceptor());
     }
 
-    @Bean
-    public LocaleResolver localeResolver() {
-        SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
-        sessionLocaleResolver.setDefaultLocale(Locale.CHINA);
-        return sessionLocaleResolver;
-    }
 
-    @Bean
-    public LocaleChangeInterceptor localeChangeInterceptor() {
-        LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
-        localeChangeInterceptor.setParamName("language");
-        return localeChangeInterceptor;
-    }
 
 
     @Override

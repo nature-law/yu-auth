@@ -2,7 +2,10 @@ package com.xia.yuauth.controller.web.vo;
 
 import com.xia.yuauth.common.utils.SpringBeanUtil;
 import org.springframework.context.MessageSource;
+import org.springframework.context.i18n.LocaleContext;
 import org.springframework.context.i18n.LocaleContextHolder;
+
+import java.util.Locale;
 
 /**
  * description: 返回页面结果
@@ -21,7 +24,8 @@ public class Result<T> {
     public Result<T> withCode(String code) {
         this.code = code;
         MessageSource messageSource = SpringBeanUtil.getBeanByClass(MessageSource.class);
-        String message = messageSource.getMessage(code, null, LocaleContextHolder.getLocale());
+
+        String message = messageSource.getMessage(code, null, Locale.CHINA);
         this.desc = message;
         return this;
     }
