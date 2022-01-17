@@ -1,0 +1,1182 @@
+11:54:23.779[INFO ]
+
+ :: Dubbo Spring Boot (v3.0.1) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.1) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+ o.a.d.s.b.c.e.WelcomeLogoApplicationListener.onApplicationEvent:64
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.5)
+
+11:54:23.834[INFO ]Starting YuAuthApplication using Java 1.8.0_312 on wanghaoxindeMac-mini.local with PID 22893 (/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar started by wanghaoxin in /Users/wanghaoxin/IdeaProjects/yu-auth/bin) c.x.y.YuAuthApplication.logStarting:55
+11:54:23.834[DEBUG]Running with Spring Boot v2.4.5, Spring v5.3.6 c.x.y.YuAuthApplication.logStarting:56
+11:54:23.834[INFO ]The following profiles are active: dev c.x.y.YuAuthApplication.logStartupProfileInfo:679
+11:54:23.834[DEBUG]Loading source class com.xia.yuauth.YuAuthApplication o.s.b.SpringApplication.load:703
+11:54:23.884[INFO ]For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo:255
+11:54:23.884[DEBUG]Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:629
+11:54:23.917[DEBUG]Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:23.927[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:23.963[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/controller/web/handler/ResultHandler.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.964[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/controller/web/handler/PageParamsHandler.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.972[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/controller/LoginController.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.974[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/controller/UserController.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.974[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/common/enums/handler/UserStatusHandler.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.976[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/common/utils/SpringBeanUtil.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.977[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/common/exception/GlobalExceptionHandler.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.977[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/service/impl/UserServiceImpl.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.977[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/service/impl/VerifyCodeShortMessageServiceImpl.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.977[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/service/impl/VerifyCodeMailServiceImpl.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.978[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/service/impl/RefreshTokenServiceImpl.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.987[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/infrastructure/middleware/RedisConfiguration.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.991[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/infrastructure/config/WebConfig.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.994[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/infrastructure/config/DataJdbcConfiguration.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.995[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/infrastructure/config/shiro/UserRealm.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.996[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/infrastructure/config/shiro/ShiroConfig.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:23.996[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/infrastructure/generation/IdGeneration.class] o.s.c.a.ClassPathBeanDefinitionScanner.scanCandidateComponents:435
+11:54:24.126[DEBUG]Found key 'spring.messages.basename' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:24.205[DEBUG]Found key 'spring.datasource.url' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:24.275[DEBUG]Found key 'spring.mail.host' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:24.278[DEBUG]Found key 'spring.mail.host' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:24.306[INFO ]Multiple Spring Data modules found, entering strict repository configuration mode! o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected:250
+11:54:24.307[INFO ]Bootstrapping Spring Data Redis repositories in DEFAULT mode. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:128
+11:54:24.315[DEBUG]Scanning for Redis repositories in packages com.xia.yuauth.infrastructure.middleware. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:141
+11:54:24.318[INFO ]Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:188
+11:54:24.408[DEBUG]The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ServicePackagesHolder]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboServicePackagesHolder] has been registered. o.a.d.c.s.u.DubboBeanUtils.registerInfrastructureBean:115
+11:54:24.409[DEBUG]The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.reference.ReferenceBeanManager]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboReferenceBeanManager] has been registered. o.a.d.c.s.u.DubboBeanUtils.registerInfrastructureBean:115
+11:54:24.410[DEBUG]The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered. o.a.d.c.s.u.DubboBeanUtils.registerInfrastructureBean:115
+11:54:24.410[DEBUG]The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered. o.a.d.c.s.u.DubboBeanUtils.registerInfrastructureBean:115
+11:54:24.411[DEBUG]The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered. o.a.d.c.s.u.DubboBeanUtils.registerInfrastructureBean:115
+11:54:24.414[DEBUG]The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered. o.a.d.c.s.u.DubboBeanUtils.registerInfrastructureBean:115
+11:54:24.415[DEBUG]The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboConfigInitializationPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigInitializationPostProcessor] has been registered. o.a.d.c.s.u.DubboBeanUtils.registerInfrastructureBean:115
+11:54:24.415[DEBUG]The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboInfraBeanRegisterPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboInfraBeanRegisterPostProcessor] has been registered. o.a.d.c.s.u.DubboBeanUtils.registerInfrastructureBean:115
+11:54:24.425[DEBUG]Loaded 11 bean definitions from class path resource [dubbo/consumer.xml] o.s.b.f.x.XmlBeanDefinitionReader.doLoadBeanDefinitions:393
+11:54:24.425[INFO ]Multiple Spring Data modules found, entering strict repository configuration mode! o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected:250
+11:54:24.425[INFO ]Bootstrapping Spring Data JDBC repositories in DEFAULT mode. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:128
+11:54:24.425[DEBUG]Scanning for JDBC repositories in packages com.xia.yuauth. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:141
+11:54:24.433[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/domain/model/user/UserRepository.class] o.s.d.r.c.RepositoryComponentProvider.scanCandidateComponents:435
+11:54:24.519[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/service/impl/UserServiceImpl.class] o.s.c.a.ClassPathScanningCandidateComponentProvider.scanCandidateComponents:435
+11:54:24.519[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/service/impl/VerifyCodeShortMessageServiceImpl.class] o.s.c.a.ClassPathScanningCandidateComponentProvider.scanCandidateComponents:435
+11:54:24.520[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/service/impl/VerifyCodeMailServiceImpl.class] o.s.c.a.ClassPathScanningCandidateComponentProvider.scanCandidateComponents:435
+11:54:24.520[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/service/impl/RefreshTokenServiceImpl.class] o.s.c.a.ClassPathScanningCandidateComponentProvider.scanCandidateComponents:435
+11:54:24.524[INFO ]Finished Spring Data repository scanning in 98 ms. Found 1 JDBC repository interfaces. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:188
+11:54:24.525[DEBUG]Found key 'spring.messages.basename' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:24.607[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:24.648[INFO ]Multiple Spring Data modules found, entering strict repository configuration mode! o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected:250
+11:54:24.648[INFO ]Bootstrapping Spring Data Redis repositories in DEFAULT mode. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:128
+11:54:24.649[DEBUG]Scanning for Redis repositories in packages com.xia.yuauth. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:141
+11:54:24.656[DEBUG]Identified candidate component class: URL [jar:file:/Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar!/BOOT-INF/classes!/com/xia/yuauth/domain/model/user/UserRepository.class] o.s.d.r.c.RepositoryComponentProvider.scanCandidateComponents:435
+11:54:24.658[INFO ]Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xia.yuauth.domain.model.user.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository. o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate:349
+11:54:24.658[INFO ]Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces. o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn:188
+11:54:24.678[DEBUG]Found key 'spring.mail.host' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:24.732[DEBUG]Creating shared instance of singleton bean 'dubboConfigAliasPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:24.732[DEBUG]Creating shared instance of singleton bean 'dubboInfraBeanRegisterPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+log4j:WARN No appenders could be found for logger (org.apache.dubbo.config.context.ConfigManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+11:54:24.759[DEBUG]Creating shared instance of singleton bean 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:24.767[DEBUG]Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:24.771[DEBUG]Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:24.785[INFO ]Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'. o.s.c.a.ConfigurationClassPostProcessor.enhanceConfigurationClasses:426
+11:54:24.840[DEBUG]Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:24.847[DEBUG]Creating shared instance of singleton bean 'referenceAnnotationBeanPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:24.848[DEBUG]Creating shared instance of singleton bean 'dubboReferenceBeanManager' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.076[DEBUG]Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.076[DEBUG]Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.076[DEBUG]Creating shared instance of singleton bean 'cn.hutool.extra.spring.SpringUtil' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.076[DEBUG]Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.077[DEBUG]Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.078[DEBUG]Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.079[DEBUG]Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.082[DEBUG]Creating shared instance of singleton bean 'dubboConfigDefaultPropertyValueBeanPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.082[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.082[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.082[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.083[WARN ]Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment o.s.b.c.p.PropertySourcesDeducer.getSinglePropertySourcesPlaceholderConfigurer:66
+11:54:25.084[DEBUG]Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.091[DEBUG]Creating shared instance of singleton bean 'creator' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.092[DEBUG]Creating shared instance of singleton bean 'dubboConfigInitializationPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.094[DEBUG]Creating shared instance of singleton bean 'dataSourceInitializerPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.094[DEBUG]Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.098[DEBUG]Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.100[DEBUG]Creating shared instance of singleton bean 'shiroFilterFactoryBean' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.100[DEBUG]Creating shared instance of singleton bean 'shiroConfig' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.102[DEBUG]Creating shared instance of singleton bean 'yu-auth-consumer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.107[INFO ]Bean 'yu-auth-consumer' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.107[DEBUG]Creating shared instance of singleton bean 'org.springframework.cache.config.internalCacheAdvisor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.107[DEBUG]Creating shared instance of singleton bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.111[DEBUG]Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.111[DEBUG]Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.113[DEBUG]Creating shared instance of singleton bean 'authorizationAttributeSourceAdvisor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.114[DEBUG]Creating shared instance of singleton bean 'securityManager' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.115[DEBUG]Creating shared instance of singleton bean 'loginRealm' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.115[DEBUG]Creating shared instance of singleton bean 'hashedCredentialsMatcher' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.123[INFO ]Bean 'hashedCredentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.124[DEBUG]Autowiring by type from bean name 'loginRealm' via factory method to bean named 'hashedCredentialsMatcher' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.125[DEBUG]Creating shared instance of singleton bean 'userServiceImpl' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.126[DEBUG]Creating shared instance of singleton bean 'userRepository' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.134[DEBUG]Creating shared instance of singleton bean 'jdbcMappingContext' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.135[DEBUG]Creating shared instance of singleton bean 'dataJdbcConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.138[INFO ]Bean 'dataJdbcConfiguration' of type [com.xia.yuauth.infrastructure.config.DataJdbcConfiguration$$EnhancerBySpringCGLIB$$824fee36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.139[DEBUG]Creating shared instance of singleton bean 'jdbcCustomConversions' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.155[DEBUG]Adding user defined converter from class java.lang.Integer to interface com.xia.yuauth.common.enums.EnumConvertible as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.156[DEBUG]Adding user defined converter from interface com.xia.yuauth.common.enums.EnumConvertible to class java.lang.Object as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.156[DEBUG]Adding converter from class java.sql.Timestamp to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.157[DEBUG]Adding converter from class java.time.LocalDateTime to class java.sql.Timestamp as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.157[DEBUG]Adding converter from class java.sql.Timestamp to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.157[DEBUG]Adding converter from class java.time.LocalDate to class java.sql.Timestamp as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.157[DEBUG]Adding converter from class java.sql.Timestamp to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.158[DEBUG]Adding converter from class java.time.LocalTime to class java.sql.Timestamp as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.158[DEBUG]Adding converter from class java.sql.Timestamp to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.158[DEBUG]Adding converter from class java.time.Instant to class java.sql.Timestamp as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.158[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.158[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.159[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.159[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.159[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.159[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.160[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.160[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.160[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.160[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.161[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.161[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.161[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.161[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.162[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.162[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.162[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.162[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.162[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.165[INFO ]Bean 'jdbcCustomConversions' of type [org.springframework.data.jdbc.core.convert.JdbcCustomConversions] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.165[DEBUG]Autowiring by type from bean name 'jdbcMappingContext' via factory method to bean named 'jdbcCustomConversions' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.174[INFO ]Bean 'jdbcMappingContext' of type [org.springframework.data.jdbc.core.mapping.JdbcMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.175[DEBUG]Creating shared instance of singleton bean 'jdbcDialect' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.175[DEBUG]Creating shared instance of singleton bean 'namedParameterJdbcTemplate' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.175[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.176[INFO ]Bean 'org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.177[DEBUG]Creating shared instance of singleton bean 'jdbcTemplate' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.177[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.178[INFO ]Bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.178[DEBUG]Creating shared instance of singleton bean 'dataSource' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.179[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.179[INFO ]Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.180[DEBUG]Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.186[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.198[INFO ]Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.199[DEBUG]Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.210[DEBUG]Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.loader.LaunchedURLClassLoader@7daf6ecc c.z.h.HikariConfig.attemptFromContextLoader:946
+11:54:25.220[INFO ]Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.221[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.222[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.223[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.228[INFO ]Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.229[DEBUG]Creating shared instance of singleton bean 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.230[INFO ]Bean 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties' of type [org.springframework.boot.autoconfigure.jdbc.JdbcProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.231[DEBUG]Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'dataSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.231[DEBUG]Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.235[INFO ]Bean 'jdbcTemplate' of type [org.springframework.jdbc.core.JdbcTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.235[DEBUG]Autowiring by type from bean name 'namedParameterJdbcTemplate' via factory method to bean named 'jdbcTemplate' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.239[INFO ]Bean 'namedParameterJdbcTemplate' of type [org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.239[DEBUG]Autowiring by type from bean name 'jdbcDialect' via factory method to bean named 'namedParameterJdbcTemplate' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.243[DEBUG]Fetching JDBC Connection from DataSource o.s.j.d.DataSourceUtils.doGetConnection:115
+11:54:25.244[DEBUG]yu-auth-pool - configuration: c.z.h.HikariConfig.logConfiguration:1066
+11:54:25.245[DEBUG]allowPoolSuspension.............false c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.245[DEBUG]autoCommit......................true c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.245[DEBUG]catalog.........................none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.245[DEBUG]connectionInitSql...............none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.246[DEBUG]connectionTestQuery.............none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.246[DEBUG]connectionTimeout...............30000 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.246[DEBUG]dataSource......................none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.246[DEBUG]dataSourceClassName.............none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.246[DEBUG]dataSourceJNDI..................none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.247[DEBUG]dataSourceProperties............{password=<masked>} c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.247[DEBUG]driverClassName................."com.mysql.cj.jdbc.Driver" c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.247[DEBUG]exceptionOverrideClassName......none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.247[DEBUG]healthCheckProperties...........{} c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.248[DEBUG]healthCheckRegistry.............none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.248[DEBUG]idleTimeout.....................600000 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.248[DEBUG]initializationFailTimeout.......1 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.248[DEBUG]isolateInternalQueries..........false c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.248[DEBUG]jdbcUrl.........................jdbc:mysql://8.142.78.63:3306/yu-auth?useUnicode=TRUE&characterEncoding=utf-8&useSSL=true&serverTimezone=GMT%2B8 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.248[DEBUG]leakDetectionThreshold..........0 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.249[DEBUG]maxLifetime.....................1800000 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.249[DEBUG]maximumPoolSize.................50 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.249[DEBUG]metricRegistry..................none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.249[DEBUG]metricsTrackerFactory...........none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.249[DEBUG]minimumIdle.....................2 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.250[DEBUG]password........................<masked> c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.250[DEBUG]poolName........................"yu-auth-pool" c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.250[DEBUG]readOnly........................false c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.250[DEBUG]registerMbeans..................false c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.250[DEBUG]scheduledExecutor...............none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.250[DEBUG]schema..........................none c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.251[DEBUG]threadFactory...................internal c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.251[DEBUG]transactionIsolation............default c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.251[DEBUG]username........................"root" c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.251[DEBUG]validationTimeout...............5000 c.z.h.HikariConfig.logConfiguration:1098
+11:54:25.251[INFO ]yu-auth-pool - Starting... c.z.h.HikariDataSource.getConnection:110
+11:54:25.600[DEBUG]yu-auth-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cd629b3 c.z.h.p.HikariPool.checkFailFast:564
+11:54:25.601[INFO ]yu-auth-pool - Start completed. c.z.h.HikariDataSource.getConnection:123
+11:54:25.623[INFO ]Bean 'jdbcDialect' of type [org.springframework.data.relational.core.dialect.MySqlDialect] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.624[DEBUG]Creating shared instance of singleton bean 'jdbcConverter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.629[DEBUG]Autowiring by type from bean name 'jdbcConverter' via factory method to bean named 'jdbcMappingContext' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.629[DEBUG]Autowiring by type from bean name 'jdbcConverter' via factory method to bean named 'namedParameterJdbcTemplate' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.629[DEBUG]Autowiring by type from bean name 'jdbcConverter' via factory method to bean named 'jdbcCustomConversions' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.629[DEBUG]Autowiring by type from bean name 'jdbcConverter' via factory method to bean named 'jdbcDialect' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.635[INFO ]Bean 'jdbcConverter' of type [org.springframework.data.jdbc.core.convert.BasicJdbcConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.638[INFO ]Bean '(inner bean)#7fc4780b' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.638[INFO ]Bean '(inner bean)#7fc4780b' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.640[INFO ]Bean '(inner bean)#766653e6' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.644[INFO ]Bean '(inner bean)#55c53a33' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.644[INFO ]Bean '(inner bean)#55c53a33' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.646[DEBUG]Creating shared instance of singleton bean 'dataAccessStrategyBean' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.647[DEBUG]Autowiring by type from bean name 'dataAccessStrategyBean' via factory method to bean named 'namedParameterJdbcTemplate' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.647[DEBUG]Autowiring by type from bean name 'dataAccessStrategyBean' via factory method to bean named 'jdbcConverter' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.647[DEBUG]Autowiring by type from bean name 'dataAccessStrategyBean' via factory method to bean named 'jdbcMappingContext' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.647[DEBUG]Autowiring by type from bean name 'dataAccessStrategyBean' via factory method to bean named 'jdbcDialect' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.653[INFO ]Bean 'dataAccessStrategyBean' of type [org.springframework.data.jdbc.core.convert.DefaultDataAccessStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.655[DEBUG]Creating shared instance of singleton bean 'beforeSaveCallback' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.656[INFO ]Bean 'beforeSaveCallback' of type [com.xia.yuauth.infrastructure.config.DataJdbcConfiguration$$Lambda$548/1332757905] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.657[DEBUG]Creating shared instance of singleton bean 'org.springframework.data.relational.core.mapping.event.RelationalAuditingCallback' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.657[DEBUG]Creating shared instance of singleton bean 'jdbcAuditingHandler' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.661[DEBUG]No AuditorAware set! Auditing will not be applied! o.s.d.a.AuditingHandler.afterPropertiesSet:120
+11:54:25.698[DEBUG]Initializing repository instance for com.xia.yuauth.domain.model.user.UserRepository… o.s.d.r.c.s.RepositoryFactorySupport.getRepository:269
+11:54:25.706[DEBUG]yu-auth-pool - Before cleanup stats (total=1, active=0, idle=1, waiting=0) c.z.h.p.HikariPool.logPoolState:421
+11:54:25.707[DEBUG]yu-auth-pool - After cleanup  stats (total=1, active=0, idle=1, waiting=0) c.z.h.p.HikariPool.logPoolState:421
+11:54:25.746[DEBUG]Finished creation of repository instance for {}. o.s.d.r.c.s.RepositoryFactorySupport.getRepository:313
+11:54:25.747[INFO ]Bean 'userRepository' of type [org.springframework.data.jdbc.repository.support.JdbcRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.747[INFO ]Bean 'userRepository' of type [com.sun.proxy.$Proxy83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.752[DEBUG]Creating shared instance of singleton bean 'userMapper' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.755[DEBUG]Creating shared instance of singleton bean 'sqlSessionFactory' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.755[DEBUG]Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.756[DEBUG]Cannot find '.class' file for class [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$24700f10] - unable to determine constructor/method parameter names o.s.c.LocalVariableTableParameterNameDiscoverer.inspectClass:99
+11:54:25.756[DEBUG]Creating shared instance of singleton bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.760[INFO ]Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.761[DEBUG]Autowiring by type from bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' via constructor to bean named 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.761[DEBUG]Autowiring by type from bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.762[DEBUG]Creating shared instance of singleton bean 'userStatusHandler' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.764[INFO ]Bean 'userStatusHandler' of type [com.xia.yuauth.common.enums.handler.UserStatusHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.769[INFO ]Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$24700f10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.771[DEBUG]Autowiring by type from bean name 'sqlSessionFactory' via factory method to bean named 'dataSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.858[DEBUG]yu-auth-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@789af7f2 c.z.h.p.HikariPool.call:728
+11:54:25.860[DEBUG]yu-auth-pool - After adding stats (total=2, active=0, idle=2, waiting=0) c.z.h.p.HikariPool.logPoolState:421
+11:54:25.867[INFO ]Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.867[DEBUG]Creating shared instance of singleton bean 'sqlSessionTemplate' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.868[DEBUG]Autowiring by type from bean name 'sqlSessionTemplate' via factory method to bean named 'sqlSessionFactory' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.872[INFO ]Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.872[INFO ]Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.873[INFO ]Bean 'userMapper' of type [com.sun.proxy.$Proxy88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.875[INFO ]Bean 'userServiceImpl' of type [com.xia.yuauth.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.875[DEBUG]Creating shared instance of singleton bean 'cache' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.876[DEBUG]Creating shared instance of singleton bean 'redisConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.876[DEBUG]Found key 'spring.redis.host' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:25.876[DEBUG]Found key 'spring.redis.host' in PropertySource 'environmentProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:25.876[DEBUG]Found key 'spring.redis.database' in PropertySource 'configurationProperties' with value of type Integer o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:25.877[DEBUG]Found key 'spring.redis.database' in PropertySource 'environmentProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:25.877[DEBUG]Found key 'spring.redis.port' in PropertySource 'configurationProperties' with value of type Integer o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:25.877[DEBUG]Found key 'spring.redis.port' in PropertySource 'environmentProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:25.877[DEBUG]Found key 'spring.redis.password' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:25.877[DEBUG]Found key 'spring.redis.password' in PropertySource 'environmentProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:25.880[INFO ]Bean 'redisConfiguration' of type [com.xia.yuauth.infrastructure.middleware.RedisConfiguration$$EnhancerBySpringCGLIB$$696e3ff0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.881[DEBUG]Creating shared instance of singleton bean 'redisTemplate' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.881[DEBUG]Creating shared instance of singleton bean 'redisConnectionFactory' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.881[DEBUG]Creating shared instance of singleton bean 'jedisPoolConfig' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:25.888[INFO ]Bean 'jedisPoolConfig' of type [redis.clients.jedis.JedisPoolConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.889[DEBUG]Autowiring by type from bean name 'redisConnectionFactory' via factory method to bean named 'jedisPoolConfig' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.924[INFO ]Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.924[DEBUG]Autowiring by type from bean name 'redisTemplate' via factory method to bean named 'redisConnectionFactory' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.934[DEBUG]Adding converter from class java.lang.String to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.934[DEBUG]Adding converter from class [B to class java.lang.String as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.934[DEBUG]Adding converter from class java.lang.Number to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.934[DEBUG]Adding converter from class [B to class java.lang.Number as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.935[DEBUG]Adding converter from class java.lang.Enum to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.935[DEBUG]Adding converter from class [B to class java.lang.Enum as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.935[DEBUG]Adding converter from class java.lang.Boolean to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.935[DEBUG]Adding converter from class [B to class java.lang.Boolean as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.935[DEBUG]Adding converter from class java.util.Date to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.935[DEBUG]Adding converter from class [B to class java.util.Date as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.936[DEBUG]Adding converter from class java.util.UUID to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.936[DEBUG]Adding converter from class [B to class java.util.UUID as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.936[DEBUG]Adding converter from class java.time.LocalDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.936[DEBUG]Adding converter from class [B to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.936[DEBUG]Adding converter from class java.time.LocalDate to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.937[DEBUG]Adding converter from class [B to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.937[DEBUG]Adding converter from class java.time.LocalTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.937[DEBUG]Adding converter from class [B to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.937[DEBUG]Adding converter from class java.time.ZonedDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.937[DEBUG]Adding converter from class [B to class java.time.ZonedDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.937[DEBUG]Adding converter from class java.time.Instant to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.938[DEBUG]Adding converter from class [B to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.938[DEBUG]Adding converter from class java.time.ZoneId to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.938[DEBUG]Adding converter from class [B to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.938[DEBUG]Adding converter from class java.time.Period to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.938[DEBUG]Adding converter from class [B to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.938[DEBUG]Adding converter from class java.time.Duration to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.939[DEBUG]Adding converter from class [B to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.939[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.939[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.939[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.939[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.939[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.940[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.940[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.940[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.940[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.940[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.940[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.941[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.941[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.941[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.941[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.941[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.941[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.941[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.942[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.942[DEBUG]Adding converter from class java.lang.String to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.942[DEBUG]Adding converter from class [B to class java.lang.String as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.942[DEBUG]Adding converter from class java.lang.Number to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.943[DEBUG]Adding converter from class [B to class java.lang.Number as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.943[DEBUG]Adding converter from class java.lang.Enum to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.943[DEBUG]Adding converter from class [B to class java.lang.Enum as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.943[DEBUG]Adding converter from class java.lang.Boolean to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.943[DEBUG]Adding converter from class [B to class java.lang.Boolean as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.943[DEBUG]Adding converter from class java.util.Date to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.944[DEBUG]Adding converter from class [B to class java.util.Date as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.944[DEBUG]Adding converter from class java.util.UUID to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.944[DEBUG]Adding converter from class [B to class java.util.UUID as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.944[DEBUG]Adding converter from class java.time.LocalDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.944[DEBUG]Adding converter from class [B to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.944[DEBUG]Adding converter from class java.time.LocalDate to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.945[DEBUG]Adding converter from class [B to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.945[DEBUG]Adding converter from class java.time.LocalTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.945[DEBUG]Adding converter from class [B to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.945[DEBUG]Adding converter from class java.time.ZonedDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.945[DEBUG]Adding converter from class [B to class java.time.ZonedDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.945[DEBUG]Adding converter from class java.time.Instant to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.946[DEBUG]Adding converter from class [B to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.946[DEBUG]Adding converter from class java.time.ZoneId to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.946[DEBUG]Adding converter from class [B to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.946[DEBUG]Adding converter from class java.time.Period to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.946[DEBUG]Adding converter from class [B to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.946[DEBUG]Adding converter from class java.time.Duration to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.946[DEBUG]Adding converter from class [B to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.947[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.947[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.947[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.947[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.947[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.947[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.948[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.948[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.948[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.948[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.948[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.948[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.949[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.949[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.949[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.949[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.949[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.949[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.950[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.952[DEBUG]Adding converter from class java.lang.String to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.952[DEBUG]Adding converter from class [B to class java.lang.String as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.953[DEBUG]Adding converter from class java.lang.Number to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.953[DEBUG]Adding converter from class [B to class java.lang.Number as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.953[DEBUG]Adding converter from class java.lang.Enum to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.953[DEBUG]Adding converter from class [B to class java.lang.Enum as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.953[DEBUG]Adding converter from class java.lang.Boolean to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.953[DEBUG]Adding converter from class [B to class java.lang.Boolean as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.954[DEBUG]Adding converter from class java.util.Date to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.954[DEBUG]Adding converter from class [B to class java.util.Date as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.954[DEBUG]Adding converter from class java.util.UUID to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.954[DEBUG]Adding converter from class [B to class java.util.UUID as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.954[DEBUG]Adding converter from class java.time.LocalDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.954[DEBUG]Adding converter from class [B to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.955[DEBUG]Adding converter from class java.time.LocalDate to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.955[DEBUG]Adding converter from class [B to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.955[DEBUG]Adding converter from class java.time.LocalTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.955[DEBUG]Adding converter from class [B to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.955[DEBUG]Adding converter from class java.time.ZonedDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.955[DEBUG]Adding converter from class [B to class java.time.ZonedDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.956[DEBUG]Adding converter from class java.time.Instant to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.956[DEBUG]Adding converter from class [B to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.956[DEBUG]Adding converter from class java.time.ZoneId to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.956[DEBUG]Adding converter from class [B to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.956[DEBUG]Adding converter from class java.time.Period to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.956[DEBUG]Adding converter from class [B to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.957[DEBUG]Adding converter from class java.time.Duration to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.957[DEBUG]Adding converter from class [B to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.957[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.957[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.957[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.957[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.958[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.958[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.958[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.958[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.958[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.958[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.959[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.959[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.959[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.959[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.959[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.959[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.960[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.960[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.960[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.961[DEBUG]Adding converter from class java.lang.String to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.961[DEBUG]Adding converter from class [B to class java.lang.String as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.962[DEBUG]Adding converter from class java.lang.Number to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.962[DEBUG]Adding converter from class [B to class java.lang.Number as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.962[DEBUG]Adding converter from class java.lang.Enum to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.962[DEBUG]Adding converter from class [B to class java.lang.Enum as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.962[DEBUG]Adding converter from class java.lang.Boolean to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.962[DEBUG]Adding converter from class [B to class java.lang.Boolean as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.963[DEBUG]Adding converter from class java.util.Date to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.963[DEBUG]Adding converter from class [B to class java.util.Date as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.963[DEBUG]Adding converter from class java.util.UUID to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.963[DEBUG]Adding converter from class [B to class java.util.UUID as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.963[DEBUG]Adding converter from class java.time.LocalDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.963[DEBUG]Adding converter from class [B to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.964[DEBUG]Adding converter from class java.time.LocalDate to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.964[DEBUG]Adding converter from class [B to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.964[DEBUG]Adding converter from class java.time.LocalTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.964[DEBUG]Adding converter from class [B to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.964[DEBUG]Adding converter from class java.time.ZonedDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.964[DEBUG]Adding converter from class [B to class java.time.ZonedDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.965[DEBUG]Adding converter from class java.time.Instant to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.965[DEBUG]Adding converter from class [B to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.965[DEBUG]Adding converter from class java.time.ZoneId to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.965[DEBUG]Adding converter from class [B to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.965[DEBUG]Adding converter from class java.time.Period to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.965[DEBUG]Adding converter from class [B to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.966[DEBUG]Adding converter from class java.time.Duration to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.966[DEBUG]Adding converter from class [B to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.966[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.966[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.966[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.966[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.967[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.967[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.967[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.967[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.967[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.968[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.968[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.968[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.968[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.969[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.969[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.969[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.969[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.969[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.969[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.971[DEBUG]Adding converter from class java.lang.String to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.972[DEBUG]Adding converter from class [B to class java.lang.String as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.972[DEBUG]Adding converter from class java.lang.Number to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.972[DEBUG]Adding converter from class [B to class java.lang.Number as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.972[DEBUG]Adding converter from class java.lang.Enum to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.972[DEBUG]Adding converter from class [B to class java.lang.Enum as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.972[DEBUG]Adding converter from class java.lang.Boolean to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.973[DEBUG]Adding converter from class [B to class java.lang.Boolean as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.973[DEBUG]Adding converter from class java.util.Date to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.973[DEBUG]Adding converter from class [B to class java.util.Date as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.973[DEBUG]Adding converter from class java.util.UUID to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.973[DEBUG]Adding converter from class [B to class java.util.UUID as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.973[DEBUG]Adding converter from class java.time.LocalDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.974[DEBUG]Adding converter from class [B to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.974[DEBUG]Adding converter from class java.time.LocalDate to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.974[DEBUG]Adding converter from class [B to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.974[DEBUG]Adding converter from class java.time.LocalTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.974[DEBUG]Adding converter from class [B to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.974[DEBUG]Adding converter from class java.time.ZonedDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.974[DEBUG]Adding converter from class [B to class java.time.ZonedDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.975[DEBUG]Adding converter from class java.time.Instant to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.975[DEBUG]Adding converter from class [B to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.975[DEBUG]Adding converter from class java.time.ZoneId to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.975[DEBUG]Adding converter from class [B to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.975[DEBUG]Adding converter from class java.time.Period to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.975[DEBUG]Adding converter from class [B to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.976[DEBUG]Adding converter from class java.time.Duration to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.976[DEBUG]Adding converter from class [B to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.976[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.976[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.976[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.976[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.976[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.977[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.977[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.977[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.977[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.977[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.977[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.977[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.978[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.978[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.978[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.978[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.978[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.978[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.979[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:25.989[INFO ]Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.989[DEBUG]Autowiring by type from bean name 'cache' via factory method to bean named 'redisTemplate' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:25.992[INFO ]Bean 'cache' of type [com.xia.yuauth.infrastructure.middleware.AppRedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.997[INFO ]Bean 'loginRealm' of type [com.xia.yuauth.infrastructure.config.shiro.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:25.998[DEBUG]Creating shared instance of singleton bean 'tokenRealm' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.003[INFO ]Bean 'tokenRealm' of type [com.xia.yuauth.infrastructure.config.shiro.JwtRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:26.004[DEBUG]Creating shared instance of singleton bean 'userModularRealmAuthenticator' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.009[INFO ]Bean 'userModularRealmAuthenticator' of type [com.xia.yuauth.infrastructure.config.shiro.MyModularRealmAuthenticator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:26.010[DEBUG]Autowiring by type from bean name 'securityManager' via factory method to bean named 'loginRealm' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.010[DEBUG]Autowiring by type from bean name 'securityManager' via factory method to bean named 'tokenRealm' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.010[DEBUG]Autowiring by type from bean name 'securityManager' via factory method to bean named 'userModularRealmAuthenticator' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.029[INFO ]Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:26.029[DEBUG]Autowiring by type from bean name 'authorizationAttributeSourceAdvisor' via factory method to bean named 'securityManager' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.036[INFO ]Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:26.038[DEBUG]Creating shared instance of singleton bean 'transactionAttributeSource' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.041[DEBUG]Creating shared instance of singleton bean 'transactionInterceptor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.041[DEBUG]Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.044[DEBUG]Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.045[DEBUG]Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.049[DEBUG]Creating shared instance of singleton bean 'cacheOperationSource' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.055[DEBUG]Creating shared instance of singleton bean 'cacheInterceptor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.055[DEBUG]Autowiring by type from bean name 'cacheInterceptor' via factory method to bean named 'cacheOperationSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.060[DEBUG]Autowiring by type from bean name 'org.springframework.cache.config.internalCacheAdvisor' via factory method to bean named 'cacheOperationSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.060[DEBUG]Autowiring by type from bean name 'org.springframework.cache.config.internalCacheAdvisor' via factory method to bean named 'cacheInterceptor' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.069[DEBUG]Creating shared instance of singleton bean 'org.apache.dubbo.config.RegistryConfig#0' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.077[INFO ]Bean 'org.apache.dubbo.config.RegistryConfig#0' of type [org.apache.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:26.081[INFO ]Bean 'shiroConfig' of type [com.xia.yuauth.infrastructure.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$1e7f7ebb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:26.082[DEBUG]Autowiring by type from bean name 'shiroFilterFactoryBean' via factory method to bean named 'securityManager' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.085[DEBUG]Creating shared instance of singleton bean 'jwtFilter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.091[INFO ]Bean 'jwtFilter' of type [com.xia.yuauth.infrastructure.config.shiro.JwtFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376
+11:54:26.100[DEBUG]Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.101[DEBUG]Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.103[DEBUG]Creating shared instance of singleton bean 'projectingArgumentResolverBeanPostProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.108[DEBUG]Creating shared instance of singleton bean 'messageSource' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.108[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.110[DEBUG]Creating shared instance of singleton bean 'messageSourceProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.112[DEBUG]Autowiring by type from bean name 'messageSource' via factory method to bean named 'messageSourceProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.123[DEBUG]Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@6187d1f5] o.s.u.c.s.UiApplicationContextUtils.initThemeSource:85
+11:54:26.124[DEBUG]Creating shared instance of singleton bean 'tomcatServletWebServerFactory' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.124[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.146[DEBUG]Creating shared instance of singleton bean 'websocketServletWebServerCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.146[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.149[DEBUG]Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.149[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.151[DEBUG]Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.159[DEBUG]Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.161[DEBUG]Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.162[DEBUG]Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.163[DEBUG]Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.164[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.165[DEBUG]Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.165[DEBUG]Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.168[DEBUG]Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.168[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.186[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.222[DEBUG]Creating shared instance of singleton bean 'errorPageCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.223[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.223[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.225[DEBUG]Creating shared instance of singleton bean 'dispatcherServletRegistration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.225[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.226[DEBUG]Creating shared instance of singleton bean 'dispatcherServlet' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.226[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.227[DEBUG]Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.230[DEBUG]Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.242[DEBUG]Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.242[DEBUG]Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.243[DEBUG]Creating shared instance of singleton bean 'multipartConfigElement' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.243[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.243[DEBUG]Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.246[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.253[DEBUG]Autowiring by type from bean name 'errorPageCustomizer' via factory method to bean named 'dispatcherServletRegistration' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.330[DEBUG]Code archive: /Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar o.s.b.w.e.t.TomcatServletWebServerFactory.getArchiveFileDocumentRoot:81
+11:54:26.331[DEBUG]Code archive: /Users/wanghaoxin/IdeaProjects/yu-auth/build/libs/yu-auth-0.5.4-SNAPSHOT.jar o.s.b.w.e.t.TomcatServletWebServerFactory.getExplodedWarFileDocumentRoot:125
+11:54:26.331[DEBUG]None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored. o.s.b.w.e.t.TomcatServletWebServerFactory.logNoDocumentRoots:149
+11:54:26.351[INFO ]Tomcat initialized with port(s): 10010 (http) o.s.b.w.e.t.TomcatWebServer.initialize:108
+11:54:26.364[INFO ]Initializing ProtocolHandler ["http-nio-10010"] o.a.c.h.Http11NioProtocol.log:173
+11:54:26.364[INFO ]Starting service [Tomcat] o.a.c.c.StandardService.log:173
+11:54:26.365[INFO ]Starting Servlet engine: [Apache Tomcat/9.0.45] o.a.c.c.StandardEngine.log:173
+11:54:26.408[INFO ]Initializing Spring embedded WebApplicationContext o.a.c.c.C.[.[.[/].log:173
+11:54:26.408[DEBUG]Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT] o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext:283
+11:54:26.408[INFO ]Root WebApplicationContext: initialization completed in 2524 ms o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext:289
+11:54:26.411[DEBUG]Creating shared instance of singleton bean 'delegatingFilterProxy' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.417[DEBUG]Creating shared instance of singleton bean 'corsFilter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.418[DEBUG]Creating shared instance of singleton bean 'webConfig' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.439[DEBUG]Found filter chain candidate filter 'corsFilter' o.a.s.s.w.ShiroFilterFactoryBean.postProcessBeforeInitialization:523
+11:54:26.440[DEBUG]Creating Shiro Filter instance. o.a.s.s.w.ShiroFilterFactoryBean.createInstance:446
+11:54:26.443[DEBUG]Creating chain [/fonts/**] with global filters [invalidRequest] and from String definition [anon] o.a.s.w.f.m.DefaultFilterChainManager.createChain:142
+11:54:26.444[DEBUG]Attempting to apply path [/fonts/**] to filter [invalidRequest] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.444[DEBUG]Attempting to apply path [/fonts/**] to filter [anon] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.444[DEBUG]Creating chain [/css/**] with global filters [invalidRequest] and from String definition [anon] o.a.s.w.f.m.DefaultFilterChainManager.createChain:142
+11:54:26.444[DEBUG]Attempting to apply path [/css/**] to filter [invalidRequest] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.444[DEBUG]Attempting to apply path [/css/**] to filter [anon] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.444[DEBUG]Creating chain [/login/**] with global filters [invalidRequest] and from String definition [anon] o.a.s.w.f.m.DefaultFilterChainManager.createChain:142
+11:54:26.444[DEBUG]Attempting to apply path [/login/**] to filter [invalidRequest] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.444[DEBUG]Attempting to apply path [/login/**] to filter [anon] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.444[DEBUG]Creating chain [/images/**] with global filters [invalidRequest] and from String definition [anon] o.a.s.w.f.m.DefaultFilterChainManager.createChain:142
+11:54:26.444[DEBUG]Attempting to apply path [/images/**] to filter [invalidRequest] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.445[DEBUG]Attempting to apply path [/images/**] to filter [anon] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.445[DEBUG]Creating chain [/js/**] with global filters [invalidRequest] and from String definition [anon] o.a.s.w.f.m.DefaultFilterChainManager.createChain:142
+11:54:26.445[DEBUG]Attempting to apply path [/js/**] to filter [invalidRequest] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.445[DEBUG]Attempting to apply path [/js/**] to filter [anon] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.445[DEBUG]Creating chain [/v1/**] with global filters [invalidRequest] and from String definition [jwt] o.a.s.w.f.m.DefaultFilterChainManager.createChain:142
+11:54:26.445[DEBUG]Attempting to apply path [/v1/**] to filter [invalidRequest] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.445[DEBUG]Attempting to apply path [/v1/**] to filter [jwt] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.445[DEBUG]Creating chain [/**] with global filters [invalidRequest] and from String definition [authc] o.a.s.w.f.m.DefaultFilterChainManager.createChain:142
+11:54:26.445[DEBUG]Attempting to apply path [/**] to filter [invalidRequest] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.445[DEBUG]Attempting to apply path [/**] to filter [authc] with config [null] o.a.s.w.f.m.DefaultFilterChainManager.applyChainConfig:313
+11:54:26.447[DEBUG]Creating shared instance of singleton bean 'characterEncodingFilter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.453[DEBUG]Found filter chain candidate filter 'characterEncodingFilter' o.a.s.s.w.ShiroFilterFactoryBean.postProcessBeforeInitialization:523
+11:54:26.458[DEBUG]Mapping filters: filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, corsFilter urls=[/*] order=2147483647, shiroFilterFactoryBean urls=[/*] order=2147483647, jwtFilter urls=[/*] order=2147483647 o.s.b.w.s.ServletContextInitializerBeans.logMappings:236
+11:54:26.458[DEBUG]Mapping servlets: dispatcherServlet urls=[/] o.s.b.w.s.ServletContextInitializerBeans.logMappings:236
+11:54:26.479[DEBUG]Filter 'corsFilter' configured for use o.s.w.f.CorsFilter.init:242
+11:54:26.479[DEBUG]Filter 'characterEncodingFilter' configured for use o.s.b.w.s.f.OrderedCharacterEncodingFilter.init:242
+11:54:26.479[DEBUG]Filter 'delegatingFilterProxy' configured for use o.s.w.f.DelegatingFilterProxy.init:242
+11:54:26.486[DEBUG]The source of event[org.springframework.data.jdbc.core.mapping.JdbcMappingContext@7cbc3762] is not original! o.a.d.c.s.c.DubboBootstrapApplicationListener.isOriginalEventSource:73
+11:54:26.488[DEBUG]Creating shared instance of singleton bean 'yuAuthApplication' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.490[DEBUG]Creating shared instance of singleton bean 'resultHandler' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.492[DEBUG]Creating shared instance of singleton bean 'pageParamsHandler' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.494[DEBUG]Creating shared instance of singleton bean 'loginController' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.495[DEBUG]Creating shared instance of singleton bean 'verifyCodeMailServiceImpl' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.495[DEBUG]Creating shared instance of singleton bean 'mailSender' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.495[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.mail.MailSenderPropertiesConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.496[DEBUG]Creating shared instance of singleton bean 'spring.mail-org.springframework.boot.autoconfigure.mail.MailProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.498[DEBUG]Autowiring by type from bean name 'mailSender' via factory method to bean named 'spring.mail-org.springframework.boot.autoconfigure.mail.MailProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.502[DEBUG]Found key 'spring.mail.username' in PropertySource 'configurationProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:26.502[DEBUG]Found key 'spring.mail.username' in PropertySource 'environmentProperties' with value of type String o.s.c.e.PropertySourcesPropertyResolver.logKeyFound:115
+11:54:26.504[DEBUG]Creating shared instance of singleton bean 'refreshTokenServiceImpl' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.507[DEBUG]Creating shared instance of singleton bean 'userController' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.509[DEBUG]Creating shared instance of singleton bean 'springBeanUtil' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.510[DEBUG]Creating shared instance of singleton bean 'globalExceptionHandler' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.511[DEBUG]Creating shared instance of singleton bean 'verifyCodeShortMessageServiceImpl' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.512[DEBUG]Creating shared instance of singleton bean 'userRealm' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.518[DEBUG]Creating shared instance of singleton bean 'idGeneration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.518[DEBUG]Creating shared instance of singleton bean 'idService' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.522[DEBUG]Ignoring optional value for property 'check' - property not found on bean class [org.apache.dubbo.config.spring.ReferenceBean] o.s.b.AbstractNestablePropertyAccessor.processLocalProperty:422
+11:54:26.522[DEBUG]Ignoring optional value for property 'interface' - property not found on bean class [org.apache.dubbo.config.spring.ReferenceBean] o.s.b.AbstractNestablePropertyAccessor.processLocalProperty:422
+11:54:26.522[DEBUG]Ignoring optional value for property 'generic' - property not found on bean class [org.apache.dubbo.config.spring.ReferenceBean] o.s.b.AbstractNestablePropertyAccessor.processLocalProperty:422
+11:54:26.650[INFO ]The configBean[type:ReferenceConfig] has been built. o.a.d.c.s.r.ReferenceCreator.build:95
+11:54:26.655[DEBUG]Creating shared instance of singleton bean 'keyValueMappingContext' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.663[DEBUG]Creating shared instance of singleton bean 'redisCustomConversions' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.664[DEBUG]Adding converter from class java.lang.String to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.lang.String as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class java.lang.Number to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.lang.Number as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class java.lang.Enum to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.lang.Enum as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class java.lang.Boolean to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.lang.Boolean as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class java.util.Date to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.util.Date as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class java.util.UUID to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.util.UUID as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class java.time.LocalDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class java.time.LocalDate to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class java.time.LocalTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.664[DEBUG]Adding converter from class [B to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.ZonedDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class [B to class java.time.ZonedDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.Instant to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class [B to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.ZoneId to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class [B to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.Period to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class [B to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.Duration to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class [B to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.665[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.666[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.667[DEBUG]Creating shared instance of singleton bean 'redisReferenceResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.669[DEBUG]Creating shared instance of singleton bean 'redisConverter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.671[DEBUG]Adding converter from class java.lang.String to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.671[DEBUG]Adding converter from class [B to class java.lang.String as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.671[DEBUG]Adding converter from class java.lang.Number to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.671[DEBUG]Adding converter from class [B to class java.lang.Number as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.671[DEBUG]Adding converter from class java.lang.Enum to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.671[DEBUG]Adding converter from class [B to class java.lang.Enum as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.671[DEBUG]Adding converter from class java.lang.Boolean to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.671[DEBUG]Adding converter from class [B to class java.lang.Boolean as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.671[DEBUG]Adding converter from class java.util.Date to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.util.Date as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.util.UUID to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.util.UUID as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.time.LocalDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.time.LocalDate to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.time.LocalTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.time.ZonedDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.time.ZonedDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.time.Instant to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.time.ZoneId to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.time.Period to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class [B to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.672[DEBUG]Adding converter from class java.time.Duration to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class [B to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.673[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class java.lang.String to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class [B to class java.lang.String as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class java.lang.Number to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class [B to class java.lang.Number as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class java.lang.Enum to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class [B to class java.lang.Enum as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class java.lang.Boolean to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class [B to class java.lang.Boolean as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class java.util.Date to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class [B to class java.util.Date as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class java.util.UUID to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.674[DEBUG]Adding converter from class [B to class java.util.UUID as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.LocalDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class [B to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.LocalDate to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class [B to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.LocalTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class [B to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.ZonedDateTime to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class [B to class java.time.ZonedDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.Instant to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class [B to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.ZoneId to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class [B to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.Period to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class [B to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.Duration to class [B as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class [B to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.675[DEBUG]Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.util.Date to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.time.LocalDate to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.util.Date to class java.time.LocalTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.time.LocalTime to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.util.Date to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.time.Instant to class java.util.Date as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.time.ZoneId to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.lang.String to class java.time.ZoneId as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.time.Duration to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.lang.String to class java.time.Duration as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.time.Period to class java.lang.String as writing converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.lang.String to class java.time.Period as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDate as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.676[DEBUG]Adding converter from class java.lang.String to class java.time.Instant as reading converter. o.s.d.c.CustomConversions.isSupportedConverter:295
+11:54:26.681[DEBUG]Creating shared instance of singleton bean 'redisKeyValueAdapter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.685[DEBUG]Postpone listening for Redis messages until actual listeners are added o.s.d.r.l.RedisMessageListenerContainer.lazyListen:481
+11:54:26.685[DEBUG]Started RedisMessageListenerContainer o.s.d.r.l.RedisMessageListenerContainer.start:217
+11:54:26.689[DEBUG]Creating shared instance of singleton bean 'redisKeyValueTemplate' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.693[DEBUG]Creating shared instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.703[DEBUG]Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataWebConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.705[DEBUG]Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.706[DEBUG]Creating shared instance of singleton bean 'pageableCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.706[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.707[DEBUG]Creating shared instance of singleton bean 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.708[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration' via constructor to bean named 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.711[DEBUG]Creating shared instance of singleton bean 'sortCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.715[DEBUG]Creating shared instance of singleton bean 'requestMappingHandlerMapping' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.717[DEBUG]Creating shared instance of singleton bean 'mvcContentNegotiationManager' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.720[DEBUG]Creating shared instance of singleton bean 'mvcConversionService' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.729[DEBUG]Creating shared instance of singleton bean 'mvcResourceUrlProvider' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.731[DEBUG]Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.731[DEBUG]Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.731[DEBUG]Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.839[DEBUG]
+	c.x.y.c.LoginController:
+	{GET [/login/mail/verify_code]}: send(String)
+	{POST [/login/index]}: login(LoginParams)
+	{GET [/login/access_token]}: refreshAccessToken(String) _.s.w.s.H.Mappings.detectHandlerMethods:294
+11:54:26.840[DEBUG]
+	c.x.y.c.UserController:
+	{GET [/v1/sys/user/{id}]}: getUser(Long)
+	{GET [/v1/sys/users/paging]}: listAll(PageParams)
+	{POST [/v1/sys/user]}: add(User)
+	{GET [/v1/sys/users]}: list(Pageable) _.s.w.s.H.Mappings.detectHandlerMethods:294
+11:54:26.842[DEBUG]
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest) _.s.w.s.H.Mappings.detectHandlerMethods:294
+11:54:26.847[DEBUG]9 mappings in 'requestMappingHandlerMapping' o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized:361
+11:54:26.849[DEBUG]Creating shared instance of singleton bean 'mvcPatternParser' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.850[DEBUG]Creating shared instance of singleton bean 'mvcUrlPathHelper' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.851[DEBUG]Creating shared instance of singleton bean 'mvcPathMatcher' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.853[DEBUG]Creating shared instance of singleton bean 'viewControllerHandlerMapping' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.853[DEBUG]Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.853[DEBUG]Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.861[DEBUG]'viewControllerHandlerMapping' {/index=ParameterizableViewController [view="index"], /=ParameterizableViewController [view="index"]} _.s.w.s.H.Mappings.logMappings:177
+11:54:26.862[DEBUG]Creating shared instance of singleton bean 'beanNameHandlerMapping' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.862[DEBUG]Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.862[DEBUG]Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.868[DEBUG]'beanNameHandlerMapping' {} _.s.w.s.H.Mappings.detectHandlers:86
+11:54:26.869[DEBUG]Creating shared instance of singleton bean 'routerFunctionMapping' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.870[DEBUG]Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.870[DEBUG]Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.920[DEBUG]Creating shared instance of singleton bean 'resourceHandlerMapping' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.921[DEBUG]Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.921[DEBUG]Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.921[DEBUG]Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.926[DEBUG]'resourceHandlerMapping' {/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/**], Classpath [static/], Classpath [public/**]]} _.s.w.s.H.Mappings.logMappings:177
+11:54:26.927[DEBUG]Creating shared instance of singleton bean 'defaultServletHandlerMapping' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.928[DEBUG]Creating shared instance of singleton bean 'requestMappingHandlerAdapter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.928[DEBUG]Creating shared instance of singleton bean 'mvcValidator' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.931[DEBUG]Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.931[DEBUG]Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.931[DEBUG]Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.934[DEBUG]Creating shared instance of singleton bean 'sortResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.937[DEBUG]Creating shared instance of singleton bean 'pageableResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.951[DEBUG]ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 2 ResponseBodyAdvice o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache:625
+11:54:26.972[DEBUG]Creating shared instance of singleton bean 'handlerFunctionAdapter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.974[DEBUG]Creating shared instance of singleton bean 'mvcUriComponentsContributor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.975[DEBUG]Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.975[DEBUG]Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.976[DEBUG]Creating shared instance of singleton bean 'httpRequestHandlerAdapter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.977[DEBUG]Creating shared instance of singleton bean 'simpleControllerHandlerAdapter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.978[DEBUG]Creating shared instance of singleton bean 'handlerExceptionResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.978[DEBUG]Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.983[DEBUG]ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache:307
+11:54:26.986[DEBUG]Creating shared instance of singleton bean 'mvcViewResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.986[DEBUG]Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:26.991[DEBUG]Creating shared instance of singleton bean 'localeResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.993[DEBUG]Creating shared instance of singleton bean 'themeResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.995[DEBUG]Creating shared instance of singleton bean 'flashMapManager' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.997[DEBUG]Creating shared instance of singleton bean 'viewNameTranslator' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:26.999[DEBUG]Creating shared instance of singleton bean 'responseBodyConverter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.002[DEBUG]Creating shared instance of singleton bean 'jdbcAggregateTemplate' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.003[DEBUG]Autowiring by type from bean name 'jdbcAggregateTemplate' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.003[DEBUG]Autowiring by type from bean name 'jdbcAggregateTemplate' via factory method to bean named 'jdbcMappingContext' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.003[DEBUG]Autowiring by type from bean name 'jdbcAggregateTemplate' via factory method to bean named 'jdbcConverter' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.003[DEBUG]Autowiring by type from bean name 'jdbcAggregateTemplate' via factory method to bean named 'dataAccessStrategyBean' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.004[DEBUG]Creating shared instance of singleton bean 'dubboServicePackagesHolder' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.005[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.006[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.007[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.008[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.009[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.010[DEBUG]Creating shared instance of singleton bean 'taskExecutorBuilder' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.010[DEBUG]Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.012[DEBUG]Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.014[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.015[DEBUG]Creating shared instance of singleton bean 'error' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.016[DEBUG]Creating shared instance of singleton bean 'beanNameViewResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.019[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.020[DEBUG]Creating shared instance of singleton bean 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.024[DEBUG]Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.025[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.026[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.026[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.026[DEBUG]Creating shared instance of singleton bean 'conventionErrorViewResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.029[DEBUG]Creating shared instance of singleton bean 'errorAttributes' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.031[DEBUG]Creating shared instance of singleton bean 'basicErrorController' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.031[DEBUG]Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.033[DEBUG]Creating shared instance of singleton bean 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.035[DEBUG]Creating shared instance of singleton bean 'dubbo-service-class-base-packages' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.036[DEBUG]Autowiring by type from bean name 'dubbo-service-class-base-packages' via factory method to bean named 'environment' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.042[DEBUG]Creating shared instance of singleton bean 'dubbo-org.apache.dubbo.spring.boot.autoconfigure.DubboConfigurationProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.051[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.052[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari' via constructor to bean named 'dataSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.053[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.054[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.055[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.055[DEBUG]Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.057[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.058[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializationConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.058[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.059[DEBUG]Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisLanguageDriverAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.062[DEBUG]Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.065[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.065[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@a7e666' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.066[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.067[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.068[DEBUG]Creating shared instance of singleton bean 'applicationAvailability' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.070[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.071[DEBUG]Creating shared instance of singleton bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.079[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' via constructor to bean named 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.081[DEBUG]Creating shared instance of singleton bean 'lettuceClientResources' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.084[DEBUG]Using SLF4J as the default logging framework i.n.u.i.l.InternalLoggerFactory.useSlf4JLoggerFactory:63
+11:54:27.086[DEBUG]-Dio.netty.eventLoopThreads: 8 i.l.c.r.DefaultClientResources.<clinit>:115
+11:54:27.090[DEBUG]Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup i.l.c.r.DefaultEventLoopGroupProvider.createEventLoopGroup:224
+11:54:27.105[DEBUG]-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024 i.n.u.i.InternalThreadLocalMap.<clinit>:83
+11:54:27.106[DEBUG]-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096 i.n.u.i.InternalThreadLocalMap.<clinit>:86
+11:54:27.111[DEBUG]-Dio.netty.leakDetection.level: simple i.n.u.ResourceLeakDetector.<clinit>:129
+11:54:27.111[DEBUG]-Dio.netty.leakDetection.targetRecords: 4 i.n.u.ResourceLeakDetector.<clinit>:130
+11:54:27.113[DEBUG]Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@fd8294b i.n.u.ResourceLeakDetectorFactory.newResourceLeakDetector:196
+11:54:27.126[DEBUG]Platform: MacOS i.n.u.i.PlatformDependent.isOsx0:1074
+11:54:27.127[DEBUG]-Dio.netty.noUnsafe: false i.n.u.i.PlatformDependent0.explicitNoUnsafeCause0:433
+11:54:27.127[DEBUG]Java version: 8 i.n.u.i.PlatformDependent0.javaVersion0:927
+11:54:27.128[DEBUG]sun.misc.Unsafe.theUnsafe: available i.n.u.i.PlatformDependent0.<clinit>:131
+11:54:27.128[DEBUG]sun.misc.Unsafe.copyMemory: available i.n.u.i.PlatformDependent0.<clinit>:155
+11:54:27.128[DEBUG]java.nio.Buffer.address: available i.n.u.i.PlatformDependent0.<clinit>:193
+11:54:27.128[DEBUG]direct buffer constructor: available i.n.u.i.PlatformDependent0.<clinit>:258
+11:54:27.129[DEBUG]java.nio.Bits.unaligned: available, true i.n.u.i.PlatformDependent0.<clinit>:332
+11:54:27.129[DEBUG]jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9 i.n.u.i.PlatformDependent0.<clinit>:397
+11:54:27.129[DEBUG]java.nio.DirectByteBuffer.<init>(long, int): available i.n.u.i.PlatformDependent0.<clinit>:419
+11:54:27.129[DEBUG]sun.misc.Unsafe: available i.n.u.i.PlatformDependent.unsafeUnavailabilityCause0:1106
+11:54:27.129[DEBUG]-Dio.netty.tmpdir: /var/folders/tp/knmc0vx161j57fk47c_xqy_w0000gn/T (java.io.tmpdir) i.n.u.i.PlatformDependent.tmpdir0:1227
+11:54:27.129[DEBUG]-Dio.netty.bitMode: 64 (sun.arch.data.model) i.n.u.i.PlatformDependent.bitMode0:1306
+11:54:27.129[DEBUG]-Dio.netty.maxDirectMemory: 3817865216 bytes i.n.u.i.PlatformDependent.<clinit>:178
+11:54:27.130[DEBUG]-Dio.netty.uninitializedArrayAllocationThreshold: -1 i.n.u.i.PlatformDependent.<clinit>:185
+11:54:27.130[DEBUG]java.nio.ByteBuffer.cleaner(): available i.n.u.i.CleanerJava6.<clinit>:92
+11:54:27.130[DEBUG]-Dio.netty.noPreferDirect: false i.n.u.i.PlatformDependent.<clinit>:205
+11:54:27.136[DEBUG]org.jctools-core.MpscChunkedArrayQueue: available i.n.u.i.PlatformDependent.<clinit>:967
+11:54:27.142[DEBUG]Using Slf4j logging framework r.u.Loggers.debug:244
+11:54:27.164[DEBUG]LatencyUtils/HdrUtils are not available, metrics are disabled i.l.c.r.DefaultClientResources.<init>:215
+11:54:27.166[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.167[DEBUG]Creating shared instance of singleton bean 'stringRedisTemplate' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.167[DEBUG]Autowiring by type from bean name 'stringRedisTemplate' via factory method to bean named 'redisConnectionFactory' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.177[DEBUG]Creating shared instance of singleton bean 'java.lang.Object' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.178[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.178[DEBUG]Creating shared instance of singleton bean 'cacheManager' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.179[DEBUG]Creating shared instance of singleton bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.181[DEBUG]Creating shared instance of singleton bean 'cacheManagerCustomizers' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.181[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.183[DEBUG]Autowiring by type from bean name 'cacheManager' via factory method to bean named 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.183[DEBUG]Autowiring by type from bean name 'cacheManager' via factory method to bean named 'cacheManagerCustomizers' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.183[DEBUG]Autowiring by type from bean name 'cacheManager' via factory method to bean named 'redisConnectionFactory' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.183[DEBUG]Autowiring by type from bean name 'cacheManager' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.190[DEBUG]Creating shared instance of singleton bean 'cacheAutoConfigurationValidator' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.191[DEBUG]Autowiring by type from bean name 'cacheAutoConfigurationValidator' via factory method to bean named 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.192[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.193[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.193[DEBUG]Creating shared instance of singleton bean 'lifecycleProcessor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.194[DEBUG]Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.195[DEBUG]Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.197[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.197[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.198[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.199[DEBUG]Creating shared instance of singleton bean 'transactionManager' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.199[DEBUG]Autowiring by type from bean name 'transactionManager' via factory method to bean named 'environment' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.199[DEBUG]Autowiring by type from bean name 'transactionManager' via factory method to bean named 'dataSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.200[DEBUG]Creating shared instance of singleton bean 'platformTransactionManagerCustomizers' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.200[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.202[DEBUG]Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.214[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.215[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.216[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.redis.RedisReactiveAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.216[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.217[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.218[DEBUG]Creating shared instance of singleton bean 'gsonBuilder' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.218[DEBUG]Creating shared instance of singleton bean 'standardGsonBuilderCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.218[DEBUG]Creating shared instance of singleton bean 'spring.gson-org.springframework.boot.autoconfigure.gson.GsonProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.220[DEBUG]Autowiring by type from bean name 'standardGsonBuilderCustomizer' via factory method to bean named 'spring.gson-org.springframework.boot.autoconfigure.gson.GsonProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.221[DEBUG]Autowiring by type from bean name 'gsonBuilder' via factory method to bean named 'standardGsonBuilderCustomizer' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.227[DEBUG]Creating shared instance of singleton bean 'gson' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.228[DEBUG]Autowiring by type from bean name 'gson' via factory method to bean named 'gsonBuilder' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.243[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.244[DEBUG]Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.244[DEBUG]Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.246[DEBUG]Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.246[DEBUG]Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.247[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.248[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.249[DEBUG]Creating shared instance of singleton bean 'parameterNamesModule' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.252[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.253[DEBUG]Creating shared instance of singleton bean 'jacksonObjectMapper' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.253[DEBUG]Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.253[DEBUG]Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.254[DEBUG]Creating shared instance of singleton bean 'jsonComponentModule' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.254[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.258[DEBUG]Creating shared instance of singleton bean 'jacksonGeoModule' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.258[DEBUG]Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.262[DEBUG]Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.274[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.275[DEBUG]Creating shared instance of singleton bean 'stringHttpMessageConverter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.276[DEBUG]Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.277[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.278[DEBUG]Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.279[DEBUG]Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.283[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.284[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.284[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.285[DEBUG]Creating shared instance of singleton bean 'messageConverters' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.291[DEBUG]Creating shared instance of singleton bean 'org.springframework.data.web.config.ProjectingArgumentResolverRegistrar' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.292[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.293[DEBUG]Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.294[DEBUG]Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.295[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.mail.MailSenderAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.296[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.quartz.QuartzAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.297[DEBUG]Creating shared instance of singleton bean 'quartzScheduler' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.297[DEBUG]Creating shared instance of singleton bean 'spring.quartz-org.springframework.boot.autoconfigure.quartz.QuartzProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.300[DEBUG]Autowiring by type from bean name 'quartzScheduler' via factory method to bean named 'spring.quartz-org.springframework.boot.autoconfigure.quartz.QuartzProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.301[DEBUG]Autowiring by type from bean name 'quartzScheduler' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@239963d8' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.321[INFO ]Using default implementation for ThreadExecutor o.q.i.StdSchedulerFactory.instantiate:1220
+11:54:27.329[INFO ]Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl o.q.c.SchedulerSignalerImpl.<init>:61
+11:54:27.329[INFO ]Quartz Scheduler v.2.3.2 created. o.q.c.QuartzScheduler.<init>:229
+11:54:27.330[INFO ]RAMJobStore initialized. o.q.s.RAMJobStore.initialize:155
+11:54:27.330[INFO ]Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ o.q.c.QuartzScheduler.initialize:294
+11:54:27.330[INFO ]Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance. o.q.i.StdSchedulerFactory.instantiate:1374
+11:54:27.330[INFO ]Quartz scheduler version: 2.3.2 o.q.i.StdSchedulerFactory.instantiate:1378
+11:54:27.330[INFO ]JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2e54db99 o.q.c.QuartzScheduler.setJobFactory:2293
+11:54:27.332[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.333[DEBUG]Creating shared instance of singleton bean 'taskSchedulerBuilder' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.333[DEBUG]Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.334[DEBUG]Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.335[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.336[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.337[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.338[DEBUG]Creating shared instance of singleton bean 'transactionTemplate' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.338[DEBUG]Autowiring by type from bean name 'transactionTemplate' via factory method to bean named 'transactionManager' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.340[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.341[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.342[DEBUG]Creating shared instance of singleton bean 'multipartResolver' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.343[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketMessagingAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.344[DEBUG]Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.345[DEBUG]Creating shared instance of singleton bean 'inMemoryDatabaseShutdownExecutor' o.s.b.f.s.DefaultListableBeanFactory.getSingleton:225
+11:54:27.345[DEBUG]Autowiring by type from bean name 'inMemoryDatabaseShutdownExecutor' via factory method to bean named 'dataSource' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.345[DEBUG]Autowiring by type from bean name 'inMemoryDatabaseShutdownExecutor' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' o.s.b.f.s.DefaultListableBeanFactory.createArgumentArray:808
+11:54:27.355[DEBUG]Starting beans in phase 2147483646 o.s.c.s.DefaultLifecycleProcessor.start:352
+11:54:27.355[INFO ]Starting ProtocolHandler ["http-nio-10010"] o.a.c.h.Http11NioProtocol.log:173
+11:54:27.360[WARN ]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 10010 is already in use o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh:591
+11:54:27.361[INFO ]Shutting down Quartz Scheduler o.s.s.q.SchedulerFactoryBean.destroy:845
+11:54:27.361[INFO ]Scheduler quartzScheduler_$_NON_CLUSTERED shutting down. o.q.c.QuartzScheduler.shutdown:666
+11:54:27.361[INFO ]Scheduler quartzScheduler_$_NON_CLUSTERED paused. o.q.c.QuartzScheduler.standby:585
+11:54:27.361[DEBUG]Shutting down threadpool... o.q.s.SimpleThreadPool.shutdown:328
+11:54:27.361[DEBUG]Shutdown of threadpool complete. o.q.s.SimpleThreadPool.shutdown:395
+11:54:27.361[INFO ]Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete. o.q.c.QuartzScheduler.shutdown:740
+11:54:27.361[DEBUG]Initiate shutdown (0, 2, SECONDS) i.l.c.r.DefaultClientResources.shutdown:679
+11:54:27.363[DEBUG]Initiate shutdown (0, 2, SECONDS) i.l.c.r.DefaultEventLoopGroupProvider.shutdown:300
+11:54:27.366[DEBUG]Stopped RedisMessageListenerContainer o.s.d.r.l.RedisMessageListenerContainer.stop:229
+11:54:27.368[INFO ]yu-auth-pool - Shutdown initiated... c.z.h.HikariDataSource.close:350
+11:54:27.368[DEBUG]yu-auth-pool - Before shutdown stats (total=2, active=0, idle=2, waiting=0) c.z.h.p.HikariPool.logPoolState:421
+11:54:27.368[DEBUG]yu-auth-pool - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1cd629b3: (connection evicted) c.z.h.p.PoolBase.quietlyCloseConnection:134
+11:54:27.369[DEBUG]yu-auth-pool - Closing connection com.mysql.cj.jdbc.ConnectionImpl@789af7f2: (connection evicted) c.z.h.p.PoolBase.quietlyCloseConnection:134
+11:54:27.369[DEBUG]yu-auth-pool - After shutdown stats (total=0, active=0, idle=0, waiting=0) c.z.h.p.HikariPool.logPoolState:421
+11:54:27.369[INFO ]yu-auth-pool - Shutdown completed. c.z.h.HikariDataSource.close:352
+11:54:27.370[INFO ]class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying! o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor.destroy:304
+11:54:27.371[INFO ]Pausing ProtocolHandler ["http-nio-10010"] o.a.c.h.Http11NioProtocol.log:173
+11:54:27.371[INFO ]Stopping service [Tomcat] o.a.c.c.StandardService.log:173
+11:54:27.373[INFO ]Stopping ProtocolHandler ["http-nio-10010"] o.a.c.h.Http11NioProtocol.log:173
+11:54:27.373[INFO ]Destroying ProtocolHandler ["http-nio-10010"] o.a.c.h.Http11NioProtocol.log:173
+11:54:27.375[DEBUG]Creating new Restarter for thread Thread[main,5,main] o.s.b.d.r.Restarter.logTo:252
+11:54:27.378[DEBUG]The source of event[org.springframework.boot.SpringApplication@73c60324] is not original! o.a.d.c.s.c.DubboBootstrapApplicationListener.isOriginalEventSource:73
+11:54:27.391[DEBUG]Application failed to start due to an exception o.s.b.d.LoggingFailureAnalysisReporter.report:37
+org.springframework.boot.web.server.PortInUseException: Port 10010 is already in use
+	at org.springframework.boot.web.server.PortInUseException.lambda$throwIfPortBindingException$0(PortInUseException.java:70)
+	at org.springframework.boot.web.server.PortInUseException.lambda$ifPortBindingException$1(PortInUseException.java:85)
+	at org.springframework.boot.web.server.PortInUseException.ifCausedBy(PortInUseException.java:103)
+	at org.springframework.boot.web.server.PortInUseException.ifPortBindingException(PortInUseException.java:82)
+	at org.springframework.boot.web.server.PortInUseException.throwIfPortBindingException(PortInUseException.java:69)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:228)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.xia.yuauth.YuAuthApplication.main(YuAuthApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:243)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213)
+	... 25 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1074)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:239)
+	... 27 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:300)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:253)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1204)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1290)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:614)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1071)
+	... 29 common frames omitted
+11:54:27.391[ERROR]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 10010 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 10010 or configure this application to listen on another port.
+ o.s.b.d.LoggingFailureAnalysisReporter.report:40
+11:54:27.825[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.825[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.827[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.828[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.828[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.828[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.828[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.828[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.828[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
+11:54:27.829[DEBUG]WorkerThread is shut down. o.q.s.SimpleThreadPool.run:612
