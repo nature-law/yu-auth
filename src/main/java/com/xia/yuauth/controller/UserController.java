@@ -3,22 +3,16 @@ package com.xia.yuauth.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.xia.yuauth.common.enums.converter.PageParamsPageableConverter;
-import com.xia.yuauth.common.exception.ServiceException;
 import com.xia.yuauth.controller.web.annotation.ResultConvert;
 import com.xia.yuauth.controller.web.annotation.VerifyPageParams;
 import com.xia.yuauth.controller.web.vo.PageParams;
-import com.xia.yuauth.controller.web.vo.Result;
 import com.xia.yuauth.domain.model.user.User;
+import com.xia.yuauth.infrastructure.config.shiro.HashedCredentialsMatcherUtils;
 import com.xia.yuauth.infrastructure.middleware.GlobalCache;
 import com.xia.yuauth.service.UserService;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.AuthenticationToken;
-import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -41,7 +35,9 @@ public class UserController {
 
     @PostMapping(value = "/user")
     public User add(@RequestBody User user) {
+        user.setPassword(String.valueOf(HashedCredentialsMatcherUtils.encryptPassword(user.getPassword().toCharArray())));
         User saveUser = userService.createUser(user);
+        saveUser.setPassword(null);
         return saveUser;
     }
 
