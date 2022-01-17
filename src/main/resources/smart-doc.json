@@ -1,0 +1,18 @@
+{
+  "outPath": "static/api-doc",
+  "serverUrl": "http://127.0.0.1",
+  "isStrict": false,
+  "allInOne": true,
+  "coverOld": false,
+  "packageFilters": "com.xia.yuauth.controller.*",
+  "projectName": "smart-doc",
+  "revisionLogs": [
+    {
+      "version": "1.0",
+      "revisionTime": "2022-01-01 10:30",
+      "status": "update",
+      "author": "whx",
+      "remarks": "测试"
+    }
+  ]
+}

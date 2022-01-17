@@ -97,7 +97,7 @@ public class AppRedisCacheManager implements GlobalCache {
     public boolean set(String key, Object value, long time) {
         try {
             if (time > 0) {
-                redisTemplate.opsForValue().set(key, value, time, TimeUnit.SECONDS);
+                redisTemplate.opsForValue().set(key, value, time, TimeUnit.MILLISECONDS);
             } else {
                 set(key, value);
             }

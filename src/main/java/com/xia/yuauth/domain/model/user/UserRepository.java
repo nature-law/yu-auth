@@ -23,4 +23,8 @@ public interface UserRepository extends PagingAndSortingRepository<User, Long> {
 
     @Query("select * from t_sys_user where mail = :mail")
     User getUserByMail(@Param("mail") String mail);
+
+
+    @Query("select * from t_sys_user where mail = :mail and password = :password")
+    User getUserByMailAndPassword(@Param("mail") String mail, @Param("password") String password);
 }

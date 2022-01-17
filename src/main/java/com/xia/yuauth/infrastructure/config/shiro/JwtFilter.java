@@ -1,9 +1,9 @@
 package com.xia.yuauth.infrastructure.config.shiro;
 
-import cn.hutool.json.JSONObject;
-import com.auth0.jwt.interfaces.DecodedJWT;
-import com.xia.yuauth.infrastructure.utils.JWTUtils;
-import org.apache.commons.lang3.StringUtils;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.xia.yuauth.controller.web.vo.Result;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.UnauthorizedException;
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 import org.apache.shiro.web.util.WebUtils;
@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 
 /**
  * description:
@@ -54,13 +55,14 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) throws UnauthorizedException {
         if (isLoginAttempt(request, response)) {
             return executeLogin(request, response);
+        } else {
+            return false;
         }
-        return false;
     }
 
     /**
-     * 判断用户是否想要登入。
-     * 检测header里面是否包含Authorization字段即可
+     * description: 判断用户是否想要登入。
+     * 检测header里面是否包含Authorization字段即可, 如果没有token 证明是需要登录
      */
     @Override
     protected boolean isLoginAttempt(ServletRequest request, ServletResponse response) {
@@ -72,13 +74,14 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
     @Override
     protected boolean executeLogin(ServletRequest request, ServletResponse response) {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
-        //得到token
+        // 得到token
         String token = httpServletRequest.getHeader(AUTHORIZATION);
         try {
-            return JWTUtils.validateToken(token);
+            JwtToken jwtToken = new JwtToken(token);
+            SecurityUtils.getSubject().login(jwtToken);
             // 提交给realm进行登入，如果错误他会抛出异常并被捕获
-
             // 如果没有抛出异常则代表登入成功，返回true
+            return true;
         } catch (Exception e) {
             LOGGER.error(e.getMessage());
         }
@@ -90,16 +93,12 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
         LOGGER.debug("Authentication required: sending 401 Authentication challenge response.");
         HttpServletResponse httpResponse = WebUtils.toHttp(response);
 //        httpResponse.setStatus(HttpStatus.UNAUTHORIZED.value());
-        httpResponse.setCharacterEncoding("utf-8");
+        httpResponse.setCharacterEncoding(StandardCharsets.UTF_8.name());
         httpResponse.setContentType("application/json; charset=utf-8");
-        final String message = "未认证，请在前端系统进行认证";
-        final Integer status = 401;
         try (PrintWriter out = httpResponse.getWriter()) {
-//            String responseJson = "{\"message\":\"" + message + "\"}";
-            JSONObject responseJson = new JSONObject();
-            responseJson.put("msg", message);
-            responseJson.put("status", status);
-            out.print(responseJson);
+            Result<Object> result = new Result<>().withCode("A0220").withData(null);
+            JSONObject jsonObject = JSON.parseObject(JSON.toJSONString(result));
+            out.print(jsonObject);
         } catch (IOException e) {
             LOGGER.error("sendChallenge error：", e);
         }

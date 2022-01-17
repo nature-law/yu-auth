@@ -9,8 +9,11 @@ import org.apache.shiro.authc.AuthenticationToken;
  * date     2021/12/27 21:42
  * @version 1.0
  */
-public class JwtToken implements AuthenticationToken {
+public class JwtToken implements AuthenticationToken, DataAutoToken {
     private String token;
+
+    public JwtToken() {
+    }
 
     public JwtToken(String token) {
         this.token = token;
@@ -24,5 +27,10 @@ public class JwtToken implements AuthenticationToken {
     @Override
     public Object getCredentials() {
         return token;
+    }
+
+    @Override
+    public String name() {
+        return TokenNameEnum.JWT.name();
     }
 }

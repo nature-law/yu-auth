@@ -46,6 +46,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User getUserByMailAndPassword(String mail, String password) {
+        return userRepository.getUserByMailAndPassword(mail, password);
+    }
+
+    @Override
     public PageInfo<User> list(Pageable pageable) {
         PageHelper.startPage(pageable.getPageNumber(), pageable.getPageSize());
         List<User> list = userMapper.list();

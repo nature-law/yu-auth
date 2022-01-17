@@ -16,7 +16,10 @@ import org.springframework.data.domain.Pageable;
 public interface UserService {
 
     /**
-     * 创建一个用户
+     * description: 创建一个用户
+     *
+     * @param user 用户
+     * @return User 用户
      */
     User createUser(User user);
 
@@ -35,6 +38,8 @@ public interface UserService {
      * @return : 用户信息
      */
     User getUserByMail(String mail);
+
+    User getUserByMailAndPassword(String mail, String password);
 
     PageInfo<User> list(Pageable pageable);
 
