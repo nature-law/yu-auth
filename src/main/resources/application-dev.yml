@@ -34,8 +34,22 @@ spring:
         min-idle: 0
   #        邮件配置
   mail:
+    protocol: smtp
     host: smtp.163.com
+    port: 465
     username: wanghaoxin5277@163.com
     password: SAMDEJICPFWEMAXD
     default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+            socketFactory:
+              port: 465
+              class: javax.net.ssl.SSLSocketFactory
 
