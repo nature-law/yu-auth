@@ -8,7 +8,6 @@ import com.xia.yuauth.controller.web.interceptor.IpInterceptor;
 import com.xia.yuauth.controller.web.interceptor.LanguageInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -16,12 +15,16 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
+import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * @author Andy
@@ -174,7 +177,23 @@ public class WebConfig implements WebMvcConfigurer {
         // excludePathPatterns 用户排除拦截
         registry.addInterceptor(new IpInterceptor()).addPathPatterns("/**").excludePathPatterns("/index");
         registry.addInterceptor(new LanguageInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(localeChangeInterceptor());
     }
+
+    @Bean
+    public LocaleResolver localeResolver() {
+        SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
+        sessionLocaleResolver.setDefaultLocale(Locale.CHINA);
+        return sessionLocaleResolver;
+    }
+
+    @Bean
+    public LocaleChangeInterceptor localeChangeInterceptor() {
+        LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
+        localeChangeInterceptor.setParamName("language");
+        return localeChangeInterceptor;
+    }
+
 
     @Override
     public void addFormatters(FormatterRegistry registry) {
@@ -184,6 +203,4 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addConverter(new LocalDateTimeStringConverter());
         registry.addConverterFactory(new WebEnumConverterFactory());
     }
-
-
 }
