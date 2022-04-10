@@ -12,13 +12,24 @@ import java.util.StringJoiner;
  * date     2021/12/5 21:45
  * @version 1.0
  */
-public class PageParams {
+public class PageParams<T> {
+
+    private T params;
+
     private Integer pageNum;
     private Integer pageSize;
 
     private Sort sort;
 
     public PageParams() {
+    }
+
+    public T getParams() {
+        return params;
+    }
+
+    public void setParams(T params) {
+        this.params = params;
     }
 
     /**

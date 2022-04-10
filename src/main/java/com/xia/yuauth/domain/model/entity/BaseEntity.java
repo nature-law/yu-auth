@@ -1,7 +1,6 @@
 package com.xia.yuauth.domain.model.entity;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Version;
 import org.springframework.data.relational.core.mapping.Column;
 
 import java.time.LocalDateTime;
@@ -13,47 +12,58 @@ import java.time.LocalDateTime;
  * @date 2021/11/29 13:42
  */
 public abstract class BaseEntity {
-	@Id
-	private Long id;
+    @Id
+    private Long id;
 
-	@Column(value = "update_time")
-	private LocalDateTime updateTime;
-	@Column(value = "create_time")
-	private LocalDateTime createTime;
-	@Column(value = "operator_id")
-	private Long operatorId;
+    /**
+     * 更新时间
+     */
+    @Column(value = "update_time")
+    private LocalDateTime updateTime;
+
+    /**
+     * 创建时间
+     */
+    @Column(value = "create_time")
+    private LocalDateTime createTime;
+
+    /**
+     * 最后修改人
+     */
+    @Column(value = "operator_id")
+    private Long operatorId;
 
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public LocalDateTime getUpdateTime() {
-		return updateTime;
-	}
+    public LocalDateTime getUpdateTime() {
+        return updateTime;
+    }
 
-	public void setUpdateTime(LocalDateTime updateTime) {
-		this.updateTime = updateTime;
-	}
+    public void setUpdateTime(LocalDateTime updateTime) {
+        this.updateTime = updateTime;
+    }
 
-	public LocalDateTime getCreateTime() {
-		return createTime;
-	}
+    public LocalDateTime getCreateTime() {
+        return createTime;
+    }
 
-	public void setCreateTime(LocalDateTime createTime) {
-		this.createTime = createTime;
-	}
+    public void setCreateTime(LocalDateTime createTime) {
+        this.createTime = createTime;
+    }
 
-	public Long getOperatorId() {
-		return operatorId;
-	}
+    public Long getOperatorId() {
+        return operatorId;
+    }
 
-	public void setOperatorId(Long operatorId) {
-		this.operatorId = operatorId;
-	}
+    public void setOperatorId(Long operatorId) {
+        this.operatorId = operatorId;
+    }
 
 }

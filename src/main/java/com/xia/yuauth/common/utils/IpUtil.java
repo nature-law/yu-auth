@@ -1,5 +1,7 @@
 package com.xia.yuauth.common.utils;
 
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -8,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author Administrator
  * @date 2021/2/10 10:33
  */
+@EnableTransactionManagement
 public class IpUtil {
 	/**
 	 * 私有化构造器

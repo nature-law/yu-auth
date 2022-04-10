@@ -9,6 +9,7 @@ import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 import org.apache.shiro.web.util.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -33,6 +34,9 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
 
     private static final String AUTHORIZATION = "Authorization";
 
+    @Value("auth.enable")
+    private static boolean ENABLE_AUTH;
+
     /**
      * 对跨域提供支持
      */
@@ -53,6 +57,10 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
 
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) throws UnauthorizedException {
+        if (!ENABLE_AUTH) {
+            return true;
+        }
+
         if (isLoginAttempt(request, response)) {
             return executeLogin(request, response);
         } else {

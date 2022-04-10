@@ -19,7 +19,7 @@ spring:
       minimum-idle: 2
       pool-name: yu-auth-pool
       connection-timeout: 30000
-  #      redis配置
+  #      redis配置``2`前 11111111111111111111111
   redis:
     database: 0
     host: 8.142.78.63
@@ -52,4 +52,9 @@ spring:
             socketFactory:
               port: 465
               class: javax.net.ssl.SSLSocketFactory
+zookeeper:
+  host: localhost
+  port: 2181
 
+auth:
+  enable: false

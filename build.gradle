@@ -57,6 +57,9 @@ dependencies {
     implementation 'commons-logging:commons-logging:1.2'
     implementation "org.apache.commons:commons-lang3:${commonsLang}"
 
+    implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:latest.release"))
+    implementation "com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter"
+
     implementation "redis.clients:jedis:$jedis"
 
 
